@@ -79,7 +79,7 @@
 
       {%- if section.settings.show_order_id == true -%}
       <div class="field">
-        <input type="number" id="ContactForm-phone" class="field__input"  name="contact[{{ 'templates.contact.form.order_id' | t }}]" pattern="[0-9\-]*" value="{% if form.order_id %}{{ form.order_id }}{% endif %}" placeholder="{{ 'templates.contact.form.order_id' | t }}">
+        <input type="number" id="ContactForm-phone" class="field__input"  name="order_id" pattern="[0-9\-]*" value="{% if form.order_id %}{{ form.order_id }}{% endif %}" placeholder="{{ 'templates.contact.form.order_id' | t }}">
         <label class="field__label" for="ContactForm-phone">Order Id</label>
       </div>
       {%- endif -%}
