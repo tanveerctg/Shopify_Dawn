@@ -72,39 +72,34 @@
         <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
         <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
       </div>
+
+
+      
       <div class="contact__fields">             
         <div class="field">
-          <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
-          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          <input class="field__input" autocomplete="name" type="text" id="buisness_name" name="contact[buisness_name]" placeholder="Buisness Name">
+          <label class="field__label" for="buisness_name">Buisness Name</label>
         </div>
        
         <div class="field field--with-error">
           <input
-            autocomplete="email"
-            type="email"
-            id="ContactForm-email"
+            type="text"
+            id="website"
             class="field__input"
-            name="contact[email]"
+            name="contact[website]"
             spellcheck="false"
             autocapitalize="off"
-            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
             aria-required="true"
-            {% if form.errors contains 'email' %}
-              aria-invalid="true"
-              aria-describedby="ContactForm-email-error"
-            {% endif %}
-            placeholder="{{ 'templates.contact.form.email' | t }}"
+            placeholder="Website"
           >
-          <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
-          {%- if form.errors contains 'email' -%}
-            <small class="contact__field-error" id="ContactForm-email-error">
-              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-              <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
-            </small>
-          {%- endif -%}
+          <label class="field__label" for="website">Website <span aria-hidden="true">*</span></label>
         </div>
       </div>
 
+
+
+
+    
       {%- if section.settings.show_order_id == true -%}
       <div class="field">
         <input type="number" id="ContactForm-phone" class="field__input"  name="contact[{{ 'templates.contact.form.order_id' | t }}]" pattern="[0-9\-]*" value="{% if form.order_id %}{{ form.order_id }}{% endif %}" placeholder="{{ 'templates.contact.form.order_id' | t }}">
