@@ -96,7 +96,13 @@
         </div>
       </div>
 
-
+      <div class="field">
+        <select name="contact[buisness_type]" id="buisness_type" class="field__input">
+          <option value="Retail_Store">Retail Store</option>
+          <option value="Ecommerce_Site">E commerce site</option>
+        </select>
+        <label class="field__label" for="buisness_type">Order Id</label>
+      </div>
 
 
     
@@ -133,6 +139,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "buisness_type",
+      "label": "Buisness Type",
+    },
     {
     "type": "checkbox",
     "id": "show_order_id",

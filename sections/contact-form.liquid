@@ -14,7 +14,10 @@
   }
 {%- endstyle -%}
 
+
+
 <div class="color-{{ section.settings.color_scheme }} gradient">
+{{ page_title }} - Page: {{ current_page }}
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
       <h2 class="title title-wrapper--no-top-margin {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
@@ -79,8 +82,8 @@
 
       {%- if section.settings.show_order_id == true -%}
       <div class="field">
-        <input type="number" id="ContactForm-phone" class="field__input"  name="contact[{{ 'templates.contact.form.order_id' | t }}]" pattern="[0-9\-]*" value="{% if form.order_id %}{{ form.order_id }}{% endif %}" placeholder="{{ 'templates.contact.form.order_id' | t }}">
-        <label class="field__label" for="ContactForm-phone">Order Id</label>
+        <input type="number" id="ContactForm-order_id" class="field__input"  name="contact[{{ 'templates.contact.form.order_id' | t }}]" pattern="[0-9\-]*" value="{% if form.order_id %}{{ form.order_id }}{% endif %}" placeholder="{{ 'templates.contact.form.order_id' | t }}">
+        <label class="field__label" for="ContactForm-order_id">Order Id</label>
       </div>
       {%- endif -%}
       <div class="field">
