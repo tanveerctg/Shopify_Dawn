@@ -99,11 +99,9 @@
   
       <div class="field">
         <select name="contact[buisness_type]" id="buisness_type" class="field__input">
-<!--           <option value="Retail_Store">Retail Store</option> -->
           {%- if buisness_types != blank -%}
       		{% for buisness_type in buisness_types %}
                 <option value="{{ buisness_type }}">{{ buisness_type }}</option>
-      			
       		{% endfor %}
           {%- endif -%}
         </select>
