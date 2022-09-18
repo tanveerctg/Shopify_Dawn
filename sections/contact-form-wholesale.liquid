@@ -96,7 +96,8 @@
         </div>
       </div>
       {% assign buisness_types = section.settings.buisness_type | split: ',' %}
-  
+
+    {{ buisness_types }}
       <div class="field">
         <select name="contact[buisness_type]" id="buisness_type" class="field__input">
           {%- if buisness_types != blank -%}
