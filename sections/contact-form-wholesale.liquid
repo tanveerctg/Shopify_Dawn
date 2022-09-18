@@ -102,7 +102,7 @@
 <!--           <option value="Retail_Store">Retail Store</option> -->
           {%- if buisness_types != blank -%}
       		{% for buisness_type in buisness_types %}
-                <option value="word">{{ buisness_type }}</option>
+                <option value="{{ buisness_type }}">{{ buisness_type }}</option>
       			
       		{% endfor %}
           {%- endif -%}
