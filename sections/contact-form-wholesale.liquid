@@ -101,8 +101,8 @@
         <select name="contact[buisness_type]" id="buisness_type" class="field__input">
 <!--           <option value="Retail_Store">Retail Store</option> -->
           {%- if buisness_types != blank -%}
-      		{% for word in words %}
-                <option value="word">{{ word }}</option>
+      		{% for buisness_type in buisness_types %}
+                <option value="word">{{ buisness_type }}</option>
       			
       		{% endfor %}
           {%- endif -%}
