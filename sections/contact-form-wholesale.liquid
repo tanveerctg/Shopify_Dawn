@@ -78,7 +78,7 @@
       <div class="contact__fields">             
         <div class="field">
           <input class="field__input" autocomplete="name" type="text" id="buisness_name" name="contact[buisness_name]" placeholder="Buisness Name">
-          <label class="field__label" for="buisness_name">Buisness Name</label>
+          <label class="field__label" for="buisness_name">{{ 'wholesale_page.contact.form.business_name' | t }}</label>
         </div>
        
         <div class="field field--with-error">
@@ -92,7 +92,7 @@
             aria-required="true"
             placeholder="Website"
           >
-          <label class="field__label" for="website">Website <span aria-hidden="true">*</span></label>
+          <label class="field__label" for="website">{{ 'wholesale_page.contact.form.website' | t }}<span aria-hidden="true">*</span></label>
         </div>
       </div>
 
@@ -101,7 +101,7 @@
           <option value="Retail_Store">Retail Store</option>
           <option value="Ecommerce_Site">E commerce site</option>
         </select>
-        <label class="field__label" for="buisness_type">Order Id</label>
+        <label class="field__label" for="buisness_type">{{'wholesale_page.contact.form.business_type' | t }}</label>
       </div>
 
 
@@ -109,7 +109,7 @@
       {%- if section.settings.show_order_id == true -%}
       <div class="field">
         <input type="number" id="ContactForm-phone" class="field__input"  name="contact[{{ 'templates.contact.form.order_id' | t }}]" pattern="[0-9\-]*" value="{% if form.order_id %}{{ form.order_id }}{% endif %}" placeholder="{{ 'templates.contact.form.order_id' | t }}">
-        <label class="field__label" for="ContactForm-phone">Order Id</label>
+        <label class="field__label" for="ContactForm-phone">{{ 'wholesale_page.contact.form.order_id' | t }}</label>
       </div>
       {%- endif -%}
       <div class="field">

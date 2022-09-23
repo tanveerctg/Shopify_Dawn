@@ -424,5 +424,15 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "wholesale_page":{
+    "contact": {
+      "form": {
+        "order_id": "Order Id",
+        "business_type":"Business Type",
+        "website":"Website",
+        "business_name":"Business Name"
+      }
+    }
   }
 }
