@@ -209,21 +209,13 @@
           "35b9842c-98d1-4475-b39d-0075923aa53b": {
             "type": "QA",
             "settings": {
-              "footer_linklist_title": "Name",
-              "home_welcome_message": "Tanveer"
-            }
-          },
-          "02a4ef9d-cb17-484f-9e92-221cbd8ecc8b": {
-            "type": "QA",
-            "settings": {
-              "footer_linklist_title": "Age",
-              "home_welcome_message": "28"
+              "question": "",
+              "answer": ""
             }
           }
         },
         "block_order": [
-          "35b9842c-98d1-4475-b39d-0075923aa53b",
-          "02a4ef9d-cb17-484f-9e92-221cbd8ecc8b"
+          "35b9842c-98d1-4475-b39d-0075923aa53b"
         ],
         "settings": {
         }
