@@ -425,13 +425,13 @@
       "print_gift_card": "Print"
     }
   },
-  "wholesale_page":{
+  "wholesale_page": {
     "contact": {
       "form": {
         "order_id": "Order Id",
-        "business_type":"Business Type",
-        "website":"Website",
-        "business_name":"Business Name"
+        "business_type": "Types of Business",
+        "website": "Website",
+        "business_name": "Business Name"
       }
     }
   }
