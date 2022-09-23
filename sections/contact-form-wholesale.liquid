@@ -95,11 +95,15 @@
           <label class="field__label" for="website">{{ 'wholesale_page.contact.form.website' | t }}<span aria-hidden="true">*</span></label>
         </div>
       </div>
+      {% assign buisness_types = section.settings.buisness_type | split: ',' %}
 
       <div class="field">
         <select name="contact[buisness_type]" id="buisness_type" class="field__input">
-          <option value="Retail_Store">Retail Store</option>
-          <option value="Ecommerce_Site">E commerce site</option>
+          {%- if buisness_types != blank -%}
+      		{% for buisness_type in buisness_types %}
+                <option value="{{ buisness_type }}">{{ buisness_type }}</option>
+      		{% endfor %}
+          {%- endif -%}
         </select>
         <label class="field__label" for="buisness_type">{{'wholesale_page.contact.form.business_type' | t }}</label>
       </div>
@@ -140,11 +144,6 @@
   "class": "section",
   "settings": [
     {
-      "type": "text",
-      "id": "buisness_type",
-      "label": "Buisness Type",
-    },
-    {
     "type": "checkbox",
     "id": "show_order_id",
     "label": "Show Order Id",
@@ -175,6 +174,12 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "text",
+      "id": "buisness_type",
+      "default": "Retail Shop,Ecommerce",
+      "label": "Buisness Type"
     },
     {
       "type": "select",
@@ -231,7 +236,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.contact-form.presets.name"
+      "name": "WholeSale Contact Form"
     }
   ]
 }
