@@ -206,16 +206,24 @@
       "faq": {
         "type": "faq",
         "blocks": {
-          "35b9842c-98d1-4475-b39d-0075923aa53b": {
+          "0b1e13fd-b696-4148-b1ba-07b3b94002de": {
             "type": "QA",
             "settings": {
-              "question": "",
-              "answer": ""
+              "question": "Name",
+              "answer": "Tanveer"
+            }
+          },
+          "a13a9e29-6833-4132-b323-0546e50498bc": {
+            "type": "QA",
+            "settings": {
+              "question": "Age",
+              "answer": "28"
             }
           }
         },
         "block_order": [
-          "35b9842c-98d1-4475-b39d-0075923aa53b"
+          "0b1e13fd-b696-4148-b1ba-07b3b94002de",
+          "a13a9e29-6833-4132-b323-0546e50498bc"
         ],
         "settings": {
         }
