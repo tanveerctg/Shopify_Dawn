@@ -1,5 +1,10 @@
 HELLO FAQ
-
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'QA' %}
+      <h1>QA</h1>
+  {% endcase %}
+{% endfor %}
 
 {% schema %}
   {
