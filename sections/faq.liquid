@@ -1,8 +1,10 @@
 {% for block in section.blocks %}
   {% case block.type %}
     {% when 'QA' %}
-      <h1>{{block.settings.question}}</h1>
-        <h1>{{block.settings.answer}}</h1>
+      <h3>{{block.settings.question}}</h3>
+      <h5>{{block.settings.answer}}</h5>
+    {% when 'header' %}
+     <h1>{{block.settings.question}}</h1>
   {% endcase %}
 {% endfor %}
 
@@ -27,9 +29,15 @@
            ]
          },
          {
-           "name": "HEADING",
-           "type": "header"
-         }
+           "name": "HEADER",
+           "type": "HEADER",
+           "settings": [
+              {
+                "type": "header",
+              	"content": "Header"
+              }
+           ]
+          }
         
   ],
   "settings": [],
