@@ -226,6 +226,12 @@
               "answer": "28"
             }
           },
+          "04ae3bf3-3e7c-40b9-833f-ba0b5eeedb89": {
+            "type": "HEADER",
+            "settings": {
+              "heading": "Education"
+            }
+          },
           "7c512562-64fb-465c-a519-950fc2dea252": {
             "type": "QA",
             "settings": {
@@ -238,6 +244,7 @@
           "4f6faae6-572e-40be-b0dc-5cd4cdfda6fa",
           "0b1e13fd-b696-4148-b1ba-07b3b94002de",
           "a13a9e29-6833-4132-b323-0546e50498bc",
+          "04ae3bf3-3e7c-40b9-833f-ba0b5eeedb89",
           "7c512562-64fb-465c-a519-950fc2dea252"
         ],
         "settings": {
