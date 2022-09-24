@@ -206,6 +206,12 @@
       "faq": {
         "type": "faq",
         "blocks": {
+          "4f6faae6-572e-40be-b0dc-5cd4cdfda6fa": {
+            "type": "HEADER",
+            "settings": {
+              "heading": "Bio"
+            }
+          },
           "0b1e13fd-b696-4148-b1ba-07b3b94002de": {
             "type": "QA",
             "settings": {
@@ -219,11 +225,20 @@
               "question": "Age",
               "answer": "28"
             }
+          },
+          "7c512562-64fb-465c-a519-950fc2dea252": {
+            "type": "QA",
+            "settings": {
+              "question": "Education",
+              "answer": "Islamic University Of Chittagong"
+            }
           }
         },
         "block_order": [
+          "4f6faae6-572e-40be-b0dc-5cd4cdfda6fa",
           "0b1e13fd-b696-4148-b1ba-07b3b94002de",
-          "a13a9e29-6833-4132-b323-0546e50498bc"
+          "a13a9e29-6833-4132-b323-0546e50498bc",
+          "7c512562-64fb-465c-a519-950fc2dea252"
         ],
         "settings": {
         }
