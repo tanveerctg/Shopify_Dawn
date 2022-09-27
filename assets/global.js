@@ -759,6 +759,7 @@ class VariantSelects extends HTMLElement {
       EU:"Length Unit : inch",
       US:"Length Unit : meter"
     }
+    console.log("this.currentVariant",this.currentVariant)
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
