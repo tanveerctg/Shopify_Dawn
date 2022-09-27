@@ -24,10 +24,10 @@
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-  <script defer="defer">
+<!--   <script defer="defer">
     console.log("Variant ID",{{ product.selected_variant.id }})
     console.log("this.getVariantData()",this.getVariantData())
-  </script>
+  </script> -->
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
   {%- if first_3d_model -%}
