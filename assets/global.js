@@ -755,7 +755,10 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-console.log("wajih",product.metafields)
+    const variants={
+      EU:"Length Unit : inch",
+      US:"Length Unit : meter"
+    }
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
