@@ -26,6 +26,7 @@
 
   <script defer="defer">
     console.log("Variant ID",{{ product.selected_variant.id }})
+    console.log("this.getVariantData()",this.getVariantData())
   </script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
