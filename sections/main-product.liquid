@@ -27,7 +27,7 @@
   <script defer="defer">
     console.log("Variant ID",{{ product.selected_variant.id }})
     console.log("this.getVariantData()",this.getVariantData())
-    JSON.parse(this.querySelector('[type="application/json"]').textContent)
+    console.log(JSON.parse(this.querySelector('[type="application/json"]').textContent))
   </script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
