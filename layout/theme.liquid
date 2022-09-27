@@ -30,7 +30,10 @@
     {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    <script>const deatils = {{ product.metafields.details }}</script>
+    <script>
+      const deatils = {{ product.metafields.details }}
+      console.log({details})
+    </script>
     {{ content_for_header }}
 
     {%- liquid
