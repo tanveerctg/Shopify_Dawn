@@ -755,8 +755,8 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-console.log("this.getVariantData()",this.getVariantData())
-      console.log("Variant ID",{{ product.selected_variant.id }})
+    console.log("this.getVariantData()",this.getVariantData())
+
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
