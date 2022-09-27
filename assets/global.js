@@ -755,13 +755,7 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-    const variants={
-      EU:"Length Unit : inch",
-      US:"Length Unit : meter"
-    }
-    console.log("this.currentVariant",this.currentVariant)
-    console.log("this.getVariantData()",this.getVariantData())
-    const 
+
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
