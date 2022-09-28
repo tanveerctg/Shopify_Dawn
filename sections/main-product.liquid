@@ -33,8 +33,19 @@
   {%- endif -%}
 <!--   <h1>{{ product.metafields.details["US UNIT"] }}</h1> -->
 
+   {% assign one = "" %}
+   {% assign two = "" %}
+  
   {% for variant in product.variants %}
-     {% assign optionName1 = variant.option2 | append:" UNIT" %}
+        {% assign optionName1 = variant.option2 | append:" UNIT" %}
+
+        {% if one == "" %}
+          {% assign one = optionName1 %}
+        {% elsif two == '' %}
+           {% assign two = optionName1 %}
+        {% endif %}
+
+  
         {{ product.metafields.details[optionName1] }}
 <!--      {% if variant.id == product.selected_variant.id %} -->
         {% if product.metafields.details["{{ variant.option2 }} UNIT"] != 'blank' %}
