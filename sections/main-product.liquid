@@ -24,14 +24,6 @@
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-  <script defer="defer">
-    console.log("Variant ID",{{ product.selected_variant.id }})
-    console.log(JSON.parse(document.querySelector('[type="application/json"]').textContent))
-  
- 
-      console.log("Variant ID",`{{ product.variants  }}`.split('ProductVariantDrop'))
-  
-  </script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
   {%- if first_3d_model -%}
@@ -50,9 +42,7 @@
     {% endif %}
   {% endfor %}
 
-  
-  <h1>Variant id : {{ product.selected_variant.id }}</h1
-  <h1>Product id: {{ product.id }}</h1>
+
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
    
     <div class="grid__item product__media-wrapper">
