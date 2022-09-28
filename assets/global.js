@@ -761,18 +761,27 @@ class VariantSelects extends HTMLElement {
 
     const currentVariantType=this.currentVariant.option2
 
-    productDetails.forEach(product=>{
-      console.log(product.className,Array.from(product.classList))
-      //
-      if(product.className.includes(currentVariantType)){
-        console.log("Correct",currentVariantType)
-        document.querySelector(`.${currentVariantType}`).style="block"
-      }else{
-        console.log("In Correct",product.className,product.classList[1])
-        document.querySelector(`.details__product.${product.classList[1]}`).style="none !important"
-      }
+    if(currentVariantType==="US"){
+     document.querySelector(`.US`).style="block"   
+      document.querySelector(`.EU`).style="none" 
+    }else{
+          document.querySelector(`.US`).style="none"   
+      document.querySelector(`.EU`).style="block" 
+    }
+
+    
+    // productDetails.forEach(product=>{
+    //   console.log(product.className,Array.from(product.classList))
+    //   //
+    //   if(product.className.includes(currentVariantType)){
+    //     console.log("Correct",currentVariantType)
+    //     document.querySelector(`.${currentVariantType}`).style="block"
+    //   }else{
+    //     console.log("In Correct",product.className,product.classList[1])
+    //     document.querySelector(`.details__product.${product.classList[1]}`).style="none !important"
+    //   }
       
-    })
+    // })
     //get details
     // console.log("Product Id",productDetails.dataset.product_id); 
     console.log("this.currentVariant",this.currentVariant)
