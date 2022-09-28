@@ -38,7 +38,7 @@
         {% if product.metafields.details["{{ variant.option2 }} UNIT"] != 'blank' %}
           {% assign optionName = variant.option2 | append:" UNIT" %}
           {% assign optionValue= product.metafields.details["{{ variant.option2 }} UNIT"] %}
-          <h1>{{ optionName| append:" UNIT" }}</h1>
+          <h1>{{ optionName }}</h1>
 
         {% endif %}
     {% endif %}
