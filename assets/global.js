@@ -761,6 +761,7 @@ class VariantSelects extends HTMLElement {
     console.log({productDetails})
     //get details
     console.log("Product Id",productDetails.dataset.product_id); 
+    console.log("this.currentVariant",this.currentVariant)
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
