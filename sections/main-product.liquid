@@ -60,7 +60,7 @@
   {% endfor %}
 
 
-{% if oneVariantId == product.selected_variant.id %}
+<!-- {% if oneVariantId == product.selected_variant.id %}
 <h1 style="display:block;" data-product_id={{ oneVariantId }}>
 {% else %}
 <h1 style="display:none;" data-product_id={{ oneVariantId }}>
@@ -75,15 +75,15 @@
 <h1 style="display:none;" data-product_id={{ twoVariantId }}>
 {% endif %}
     {{ two }}
-</h1>
+</h1> -->
 
-<!-- <h1 data-product_id={{ oneVariantId }} >
+<h1 data-product_id={{ oneVariantId }} >
   {{ one }}
 </h1>
 <h1 data-product_id={{ twoVariantId }}>
   {{ two }}
 </h1>
- -->
+
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
    
     <div class="grid__item product__media-wrapper">
