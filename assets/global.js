@@ -762,11 +762,11 @@ class VariantSelects extends HTMLElement {
     const currentVariantType=this.currentVariant.option2
 
     if(currentVariantType==="US"){
-     document.querySelector(`.US`).style="block"   
-      document.querySelector(`.EU`).style="none" 
+     document.querySelector(`.US`).style="block !important"   
+      document.querySelector(`.EU`).style="none !important" 
     }else{
-          document.querySelector(`.US`).style="none"   
-      document.querySelector(`.EU`).style="block" 
+          document.querySelector(`.US`).style="none !important"   
+      document.querySelector(`.EU`).style="block !important" 
     }
 
     
