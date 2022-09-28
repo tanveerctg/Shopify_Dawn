@@ -29,7 +29,7 @@
     console.log(JSON.parse(document.querySelector('[type="application/json"]').textContent))
   
   {% for variant in product.variants %}
-   variant id {{variant.id}}--- variant option2 {{ variant.option2 }}
+   console.log({variant})
   {% endfor %}
   </script>
 
@@ -41,7 +41,7 @@
   {%- endif -%}
   <h1>{{ product.metafields.details["US UNIT"] }}</h1>
   {% for variant in product.variants %}
-     console.log({variant)
+   variant id {{variant.id}}--- variant option2 {{ variant.option2 }}
   {% endfor %}
   <h1>Variant id : {{ product.selected_variant.id }}</h1>
   <h1>Product id: {{ product.id }}</h1>
