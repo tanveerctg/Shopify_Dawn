@@ -34,7 +34,7 @@
 <!--   <h1>{{ product.metafields.details["US UNIT"] }}</h1> -->
 
   {% for variant in product.variants %}
-        {{ variant.option2 }}
+        {{ product.metafields.details["EU UNIT"] }}
 <!--      {% if variant.id == product.selected_variant.id %} -->
         {% if product.metafields.details["{{ variant.option2 }} UNIT"] != 'blank' %}
           {% assign optionName = variant.option2 | append:" UNIT" %}
