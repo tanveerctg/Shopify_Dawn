@@ -757,7 +757,7 @@ class VariantSelects extends HTMLElement {
     this.removeErrorMessage();
     console.log("this.getVariantData()",this.getVariantData())
 
-    const productDetails = document.querySelector(".details__product");
+    const productDetails = document.querySelectorAll(".details__product");
     console.log({productDetails})
   
     //get details
