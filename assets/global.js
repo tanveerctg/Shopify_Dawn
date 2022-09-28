@@ -758,9 +758,13 @@ class VariantSelects extends HTMLElement {
     console.log("this.getVariantData()",this.getVariantData())
 
     const productDetails = document.querySelectorAll(".details__product");
-   
 
-    productDetails.forEach(product=>console.log(product))
+    const currentVariantType=this.currentVariant.option2
+
+    productDetails.forEach(product=>{
+      console.log(product)
+    
+    })
     //get details
     // console.log("Product Id",productDetails.dataset.product_id); 
     console.log("this.currentVariant",this.currentVariant)
