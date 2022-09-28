@@ -764,9 +764,11 @@ class VariantSelects extends HTMLElement {
     productDetails.forEach(product=>{
       console.log(product.className,Array.from(product.classList))
       //
-      // if(product.classList.contains(currentVariantType)){
-      //   document.querySelector(`.${currentVariantType}`).style="block"
-      // }
+      if(product.className.includes(currentVariantType)){
+        document.querySelector(`.${product.className}`).style="block"
+      }else{
+        document.querySelector(`.${product.className}`).style="none"
+      }
       
     })
     //get details
