@@ -45,10 +45,10 @@
         {% assign optionName1 = variant.option2 | append:" UNIT" %}
 
         {% if one == "" %}
-          {% assign one = optionName1 %}
+          {% assign one = variant.option2 %}
           {% assign oneVariantId = variant.id %}
         {% elsif two == '' %}
-           {% assign two = optionName1 %}
+           {% assign two = variant.option2 %}
           {% assign twoVariantId = variant.id %}
         {% endif %}
 
