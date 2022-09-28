@@ -43,8 +43,10 @@
 
         {% if one == "" %}
           {% assign one = optionName1 %}
+          {% assign oneVariantId = variant.id %}
         {% elsif two == '' %}
            {% assign two = optionName1 %}
+          {% assign twoVariantId = variant.id %}
         {% endif %}
 
 <!--      {% if variant.id == product.selected_variant.id %}
