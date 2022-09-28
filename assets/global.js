@@ -762,7 +762,7 @@ class VariantSelects extends HTMLElement {
     const currentVariantType=this.currentVariant.option2
 
     productDetails.forEach(product=>{
-      console.log(product.className,product.classList)
+      console.log(product.className,Array.from(product.classList))
       //
       // if(product.classList.contains(currentVariantType)){
       //   document.querySelector(`.${currentVariantType}`).style="block"
