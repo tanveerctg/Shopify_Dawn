@@ -44,6 +44,9 @@
   {% for variant in product.variants %}
      {% if variant.id == product.selected_variant.id %}
       Match -- {{ variant.id }}--{{ variant.option2 }}
+        {% if product.metafields.details["{{ variant.option2 }} UNIT"] != 'blank' %}
+          <h1>Hello</h1>
+        {% endif %}
     {% endif %}
   {% endfor %}
 
