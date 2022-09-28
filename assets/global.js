@@ -762,6 +762,7 @@ class VariantSelects extends HTMLElement {
     //get details
     console.log("Product Id",productDetails.dataset.product_id); 
     console.log("this.currentVariant",this.currentVariant)
+    console.log("hello",{{ all_products['handle'].metafields }})
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
