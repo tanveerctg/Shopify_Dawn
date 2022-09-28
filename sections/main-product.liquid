@@ -45,15 +45,14 @@
            {% assign two = optionName1 %}
         {% endif %}
 
-  
-        {{ product.metafields.details[optionName1] }}
-<!--      {% if variant.id == product.selected_variant.id %} -->
+<!--      {% if variant.id == product.selected_variant.id %}
         {% if product.metafields.details["{{ variant.option2 }} UNIT"] != 'blank' %}
           {% assign optionName = variant.option2 | append:" UNIT" %}
           {% assign optionValue= product.metafields.details[optionName] %}
           <h1 class="details__product" data-product_id={{ variant.id }}>{{ optionValue }}</h1>
         {% endif %}
-<!--     {% endif %} -->
+    {% endif %} -->
+  
   {% endfor %}
 
 <h1>
