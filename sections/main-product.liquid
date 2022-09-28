@@ -64,18 +64,18 @@
 
 
 {% if one == product.selected_variant.option2 %}
-<h1 style="display:block;" data-product_id={{ one }}>
+<h1 style="display:block;" class="details__product {{one }}" data-product_id={{ one }}>
 {% else %}
-<h1 style="display:none;" data-product_id={{ one }}>
+<h1 style="display:none;" class="details__product {{one }}" data-product_id={{ one }}>
 {% endif %}
     {{ one }}
 </h1>
 
 
 {% if two == product.selected_variant.option2 %} 
-<h1 style="display:block;" class="details__product" data-product_id={{ two }}>
+<h1 style="display:block;" class="details__product {{ two }}" data-product_id={{ two }}>
 {% else %}
-<h1 style="display:none;" class="details__product" data-product_id={{ two }}>
+<h1 style="display:none;" class="details__product {{ two }}" data-product_id={{ two }}>
 {% endif %}
     {{ two }}
 </h1>
