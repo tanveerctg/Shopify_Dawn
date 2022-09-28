@@ -28,7 +28,7 @@
     console.log("Variant ID",{{ product.selected_variant.id }})
     console.log(JSON.parse(document.querySelector('[type="application/json"]').textContent))
   
-    const productVariants=product.variants;
+    const productVariants={{ product.variants }};
     productVariants.forEach(variant=>console.log({variant}))
   </script>
 
