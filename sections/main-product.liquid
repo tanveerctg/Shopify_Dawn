@@ -38,10 +38,12 @@
         {% if product.metafields.details["{{ variant.option2 }} UNIT"] != 'blank' %}
           {% assign optionName = variant.option2 | append:" UNIT" %}
           {% assign optionValue= product.metafields.details[optionName] %}
-          <h1 class="details__product" data-product={{ variant.id }}>{{ optionValue }}</h1>
+          <h1 class="details__product" data-product_id={{ variant.id }}>{{ optionValue }}</h1>
         {% endif %}
     {% endif %}
   {% endfor %}
+
+
 
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
