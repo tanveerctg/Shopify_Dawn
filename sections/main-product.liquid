@@ -70,9 +70,9 @@
 
 
 {% if twoVariantId == product.selected_variant.id %} 
-<h1 style="display:block;" data-product_id={{ twoVariantId }}>
+<h1 style="display:block;" class="details__product" data-product_id={{ twoVariantId }}>
 {% else %}
-<h1 style="display:none;" data-product_id={{ twoVariantId }}>
+<h1 style="display:none;" class="details__product" data-product_id={{ twoVariantId }}>
 {% endif %}
     {{ two }}
 </h1>
