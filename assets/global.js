@@ -759,6 +759,7 @@ class VariantSelects extends HTMLElement {
 
     const productDetails = document.querySelector(".details__product");
     console.log({productDetails})
+    console.log("collections",{{collections}})
     //get details
     console.log("Product Id",productDetails.dataset.product_id); 
     console.log("this.currentVariant",this.currentVariant)
