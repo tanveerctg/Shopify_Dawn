@@ -59,7 +59,17 @@
   
   {% endfor %}
 
-<h1 data-product_id={{ oneVariantId }}>
+
+{% if oneVariantId == product.selected_variant.id %}
+<h1 style="display:block;" data-product_id={{ oneVariantId }}>
+{% else %}
+<h1 style="display:none;" data-product_id={{ oneVariantId }}>
+{% endif %}
+    {{ one }}
+</h1>
+  
+
+<h1 data-product_id={{ oneVariantId }} >
   {{ one }}
 </h1>
 <h1 data-product_id={{ twoVariantId }}>
