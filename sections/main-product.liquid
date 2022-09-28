@@ -28,8 +28,9 @@
     console.log("Variant ID",{{ product.selected_variant.id }})
     console.log(JSON.parse(document.querySelector('[type="application/json"]').textContent))
   
-    const productVariants={{ product.variants }};
-    console.log({productVariants})
+  {% for variant in product.variants %}
+   variant id {{variant.id}}--- variant option2 {{ variant.option2 }}
+  {% endfor %}
   </script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
@@ -40,7 +41,7 @@
   {%- endif -%}
   <h1>{{ product.metafields.details["US UNIT"] }}</h1>
   {% for variant in product.variants %}
-  variant id {{variant.id}}--- variant option2 {{ variant.option2 }}
+   variant id {{variant.id}}--- variant option2 {{ variant.option2 }}
   {% endfor %}
   <h1>Variant id : {{ product.selected_variant.id }}</h1>
   <h1>Product id: {{ product.id }}</h1>
