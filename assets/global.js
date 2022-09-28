@@ -768,7 +768,7 @@ class VariantSelects extends HTMLElement {
         console.log("Correct",currentVariantType)
         document.querySelector(`.${currentVariantType}`).style="block"
       }else{
-        console.log("InCorrect",product.className,product.className.split(" ")[1])
+        console.log("In Correct",product.className,product.classList[1])
         document.querySelector(`.${product.className.split(" ")[1]}`).style="none !important"
       }
       
