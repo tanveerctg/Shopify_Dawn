@@ -762,8 +762,8 @@ class VariantSelects extends HTMLElement {
     const currentVariantType=this.currentVariant.option2
 
     productDetails.forEach(product=>{
-      console.log(product)
-    
+      console.log(product.classList)
+      
     })
     //get details
     // console.log("Product Id",productDetails.dataset.product_id); 
