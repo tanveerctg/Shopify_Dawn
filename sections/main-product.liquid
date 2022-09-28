@@ -61,7 +61,7 @@
   {% endfor %}
 
 
-{% if oneVariantId == product.selected_variant.id %}
+{% if one == product.selected_variant.option2 %}
 <h1 style="display:block;" data-product_id={{ oneVariantId }}>
 {% else %}
 <h1 style="display:none;" data-product_id={{ oneVariantId }}>
@@ -70,7 +70,7 @@
 </h1>
 
 
-{% if twoVariantId == product.selected_variant.id %} 
+{% if two == product.selected_variant.option2 %} 
 <h1 style="display:block;" class="details__product" data-product_id={{ twoVariantId }}>
 {% else %}
 <h1 style="display:none;" class="details__product" data-product_id={{ twoVariantId }}>
