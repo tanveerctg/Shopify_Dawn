@@ -27,9 +27,9 @@
   <script defer="defer">
     console.log("Variant ID",{{ product.selected_variant.id }})
     console.log(JSON.parse(document.querySelector('[type="application/json"]').textContent))
-    {% for variant in product.variants %}
-      variant id {{variant.id}}--- variant option2 {{ variant.option2 }}
-    {% endfor %}
+  
+    const productVariants=product.variants;
+    productVariants.forEach(variant=>console.log({variant}))
   </script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
