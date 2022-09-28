@@ -38,7 +38,9 @@
    {% assign two = "" %}
    {% assign twoVariantId = "" %}
 
-  {{ product.selected_variant.option2 }}
+  variant --- {{ product.selected_variant.option2 }}
+  one--- {{ one }}
+  two---- {{ two }}
   {% for variant in product.variants %}
         {% assign optionName1 = variant.option2 | append:" UNIT" %}
 
