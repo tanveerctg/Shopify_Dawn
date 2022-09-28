@@ -757,6 +757,11 @@ class VariantSelects extends HTMLElement {
     this.removeErrorMessage();
     console.log("this.getVariantData()",this.getVariantData())
 
+    const productDetails = document.querySelector(".details__product");
+  console.log({productDetails})
+    //get details
+    console.log(productDetails.dataset.product_id); 
+
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
