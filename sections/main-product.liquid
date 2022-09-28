@@ -37,7 +37,9 @@
      {% if variant.id == product.selected_variant.id %}
         {% if product.metafields.details["{{ variant.option2 }} UNIT"] != 'blank' %}
           {% assign optionName = variant.option2 %}
-          <h1>{{ optionName }}</h1>
+          {% assign optionValue= product.metafields.details["{{ variant.option2 }} UNIT"] %}
+          <h1>{{ optionValue }}</h1>
+
         {% endif %}
     {% endif %}
   {% endfor %}
