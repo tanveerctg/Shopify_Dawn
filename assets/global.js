@@ -761,29 +761,29 @@ class VariantSelects extends HTMLElement {
 
     const currentVariantType=this.currentVariant.option2
 
-    // if(currentVariantType==="US"){
-    //   document.querySelector(`.US`).classList?.remove("hideee")   
-    //   document.querySelector(`.EU`).classList.add("hideee") 
-    // }else{
-    //    document.querySelector(`.EU`).classList?.remove("hideee")   
-    //   document.querySelector(`.US`).classList.add("hideee") 
-    // }
+    if(currentVariantType==="US"){
+      document.querySelector(`.US`).classList?.remove("hideee")   
+      document.querySelector(`.EU`).classList.add("hideee") 
+    }else{
+       document.querySelector(`.EU`).classList?.remove("hideee")   
+      document.querySelector(`.US`).classList.add("hideee") 
+    }
 
     
-    productDetails.forEach(product=>{
-      console.log(product.className,Array.from(product.classList))
-      //
-      if(product.className.includes(currentVariantType)){
-        console.log("Correct",currentVariantType)
-         document.querySelector(`.details__product.${product.classList[1]}`).classList.add("hideee")
-         document.querySelector(`.${currentVariantType}`).classList?.remove("hideee") 
-      }else{
-        console.log("In Correct",product.className,product.classList[1])
-         document.querySelector(`.details__product.${product.classList[1]}`).classList?.remove("hideee") 
-         document.querySelector(`.${currentVariantType}`).classList.add("hideee")
-      }
+    // productDetails.forEach(product=>{
+    //   console.log(product.className,Array.from(product.classList))
+    //   //
+    //   if(product.className.includes(currentVariantType)){
+    //     console.log("Correct",currentVariantType)
+    //      document.querySelector(`.details__product.${product.classList[1]}`).classList.add("hideee")
+    //      document.querySelector(`.${currentVariantType}`).classList?.remove("hideee") 
+    //   }else{
+    //     console.log("In Correct",product.className,product.classList[1])
+    //      document.querySelector(`.details__product.${product.classList[1]}`).classList?.remove("hideee") 
+    //      document.querySelector(`.${currentVariantType}`).classList.add("hideee")
+    //   }
       
-    })
+    // })
     //get details
     // console.log("Product Id",productDetails.dataset.product_id); 
     console.log("this.currentVariant",this.currentVariant)
