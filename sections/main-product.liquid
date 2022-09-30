@@ -652,7 +652,7 @@
   <script type="application/json">
     document.allVariants={     
       {%- for variant in product.variants -%}      
-            {{ variant.id }}:{{ variant.metafields.description.details  }}   
+            {{ variant.id }}:"{{ variant.metafields.description.details  }}"{% if forloop.last == true %}{% else %},{% endif %}     
       {%- endfor -%}
     }
   </script>
