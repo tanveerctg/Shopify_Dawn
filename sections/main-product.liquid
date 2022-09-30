@@ -646,7 +646,7 @@
   {%- endfor -%}
 
   {%- for variant in product.variants -%}
-        <h2>{{ variant.id }}</h2>           
+        <h2>{{ variant.id }}</h2>--<h2>{{ variant.metafields.description.details }}</h2>           
   {%- endfor -%}
   
   {%- if product.media.size > 0 -%}
