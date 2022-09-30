@@ -648,6 +648,14 @@
   {%- for variant in product.variants -%}
         <h2>{{ variant.id }}</h2>--<h2>{{ variant.metafields.description.details }}</h2>           
   {%- endfor -%}
+
+  <script>
+      {%- for variant in product.variants -%}
+          {
+            "{{ variant.id }}":{{ variant.metafields.description.details | json }}
+          }
+      {%- endfor -%}
+  </script>
   
   {%- if product.media.size > 0 -%}
     <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
