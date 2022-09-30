@@ -649,12 +649,15 @@
         <h2>{{ variant.id }}</h2>--<h2>{{ variant.metafields.description.details }}</h2>           
   {%- endfor -%}
 
-  <script type="application/json">
+  <script type="application/json" id="variantsInfo">
     {     
       {%- for variant in product.variants -%}      
             "{{ variant.id }}":"{{ variant.metafields.description.details  }}"{% if forloop.last == true %}{% else %},{% endif %}     
       {%- endfor -%}
     }
+  </script>
+  <script>
+    document.allVariants=document.getElementById("#variantsInfo").innerText
   </script>
   
   {%- if product.media.size > 0 -%}
