@@ -67,7 +67,7 @@
 
 
   
-{% if one == product.selected_variant.option2 %}
+{% if one ==  product.selected_or_first_available_variant.option2 %}
 <h1 class="details__product {{one }}" data-product_id={{ one }}>
 {% else %}
 <h1 class="details__product {{one }} hideee" data-product_id={{ one }}>
@@ -76,15 +76,13 @@
 </h1>
 
 
-{% if two == product.selected_variant.option2 %} 
+{% if two ==  product.selected_or_first_available_variant.option2 %} 
 <h1 class="details__product {{ two }}" data-product_id={{ two }}>
 {% else %}
 <h1 class="details__product {{ two }} hideee" data-product_id={{ two }}>
 {% endif %}
     {{ two }}
 </h1>
-
-  <h1>{{ product.selected_or_first_available_variant.option2 }}</h1>
   
 <!-- <h1 data-product_id={{ oneVariantId }} >
   {{ one }}
