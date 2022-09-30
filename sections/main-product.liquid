@@ -650,11 +650,14 @@
   {%- endfor -%}
 
   <script>
+    {
+      
       {%- for variant in product.variants -%}
-          {
+          
             "{{ variant.id }}":{{ variant.metafields.description.details | json }}{% if forloop.last == true %}{% else %},{% endif %}
-          }
+          
       {%- endfor -%}
+    }
   </script>
   
   {%- if product.media.size > 0 -%}
