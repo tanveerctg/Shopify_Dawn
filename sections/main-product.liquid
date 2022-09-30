@@ -650,11 +650,11 @@
   {%- endfor -%}
 
   <script type="application/json">
-    document.allVariants={     
+    document.allVariants=JSON.parse({     
       {%- for variant in product.variants -%}      
             {{ variant.id }}:"{{ variant.metafields.description.details  }}"{% if forloop.last == true %}{% else %},{% endif %}     
       {%- endfor -%}
-    }
+    })
   </script>
   
   {%- if product.media.size > 0 -%}
