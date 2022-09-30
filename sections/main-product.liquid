@@ -657,7 +657,8 @@
     }
   </script>
   <script>
-    document.allVariants=document.getElementById("#variantsInfo").innerText
+    document.allVariants=document.getElementById("#variantsInfo").textContent
+    console.log("document.getElementById("#variantsInfo").textContent",document.getElementById("#variantsInfo").textContent)
   </script>
   
   {%- if product.media.size > 0 -%}
