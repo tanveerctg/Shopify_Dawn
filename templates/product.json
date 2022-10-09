@@ -242,6 +242,67 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "4109b3bb-8157-480f-ba8f-3622a174f2b6": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--15276672221323__4109b3bb-8157-480f-ba8f-3622a174f2b6-16653045206e04facd-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row 1",
+            "icon": "box",
+            "row_content": "<p>hello<\/p>",
+            "page": ""
+          }
+        },
+        "template--15276672221323__4109b3bb-8157-480f-ba8f-3622a174f2b6-16653045206e04facd-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row 2",
+            "icon": "check_mark",
+            "row_content": "<p>row 2<\/p>",
+            "page": ""
+          }
+        },
+        "template--15276672221323__4109b3bb-8157-480f-ba8f-3622a174f2b6-16653045206e04facd-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row 3",
+            "icon": "check_mark",
+            "row_content": "<p>row 3<\/p>",
+            "page": ""
+          }
+        },
+        "template--15276672221323__4109b3bb-8157-480f-ba8f-3622a174f2b6-16653045206e04facd-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row 4",
+            "icon": "check_mark",
+            "row_content": "<p>row 4<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15276672221323__4109b3bb-8157-480f-ba8f-3622a174f2b6-16653045206e04facd-0",
+        "template--15276672221323__4109b3bb-8157-480f-ba8f-3622a174f2b6-16653045206e04facd-1",
+        "template--15276672221323__4109b3bb-8157-480f-ba8f-3622a174f2b6-16653045206e04facd-2",
+        "template--15276672221323__4109b3bb-8157-480f-ba8f-3622a174f2b6-16653045206e04facd-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -249,6 +310,7 @@
     "judgeme_section_review_widget_baf8",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "4109b3bb-8157-480f-ba8f-3622a174f2b6"
   ]
 }
