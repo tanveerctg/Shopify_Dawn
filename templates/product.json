@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "b3bdc86d-2418-44cc-8f35-dd26874cf0fe": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.testing_metafield.value }}",
-            "text_style": "body"
-          }
-        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -17,9 +10,11 @@
             "text_style": "uppercase"
           }
         },
-        "title": {
-          "type": "title",
+        "b3bdc86d-2418-44cc-8f35-dd26874cf0fe": {
+          "type": "text",
           "settings": {
+            "text": "{{ product.metafields.custom.testing_metafield.value }}",
+            "text_style": "body"
           }
         },
         "caption": {
@@ -102,12 +97,23 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "5e982c26-74fa-40c1-bba8-38c93c175a37": {
+          "type": "text",
+          "settings": {
+            "text": "Text block {{ product.metafields.custom.testing_metafield.value }}",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
-        "b3bdc86d-2418-44cc-8f35-dd26874cf0fe",
         "vendor",
-        "title",
+        "b3bdc86d-2418-44cc-8f35-dd26874cf0fe",
         "caption",
         "price",
         "judgeme_preview_badge_product_page_4d342285",
@@ -119,7 +125,9 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "title",
+        "5e982c26-74fa-40c1-bba8-38c93c175a37"
       ],
       "settings": {
         "enable_sticky_info": true,
