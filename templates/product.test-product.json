@@ -2,6 +2,18 @@
   "sections": {
     "main": {
       "type": "test-product",
+      "blocks": {
+        "6f5a78c3-558d-45db-9d36-5f94dcc359a6": {
+          "type": "slide",
+          "settings": {
+            "first_name": "tanveerul",
+            "last_name": "hoque"
+          }
+        }
+      },
+      "block_order": [
+        "6f5a78c3-558d-45db-9d36-5f94dcc359a6"
+      ],
       "settings": {
       }
     }
