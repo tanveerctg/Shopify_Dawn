@@ -3,16 +3,16 @@
     "main": {
       "type": "test-product",
       "blocks": {
-        "6f5a78c3-558d-45db-9d36-5f94dcc359a6": {
-          "type": "slide",
+        "5a41641f-cb8b-451a-b313-a6a4bacc7112": {
+          "type": "personal_info",
           "settings": {
-            "first_name": "tanveerul",
-            "last_name": "hoque"
+            "first_name": "",
+            "last_name": ""
           }
         }
       },
       "block_order": [
-        "6f5a78c3-558d-45db-9d36-5f94dcc359a6"
+        "5a41641f-cb8b-451a-b313-a6a4bacc7112"
       ],
       "settings": {
       }
