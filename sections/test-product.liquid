@@ -1,4 +1,12 @@
-<h1>Test Product</h1>
+{% comment %} {% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'text' %}
+      <div class="slide" {{ block.shopify_attributes }}>
+        {{ block.settings.image | image_url: width: 2048 | image_tag }}
+      </div>
+    ...
+  {% endcase %}
+{% endfor %} {% endcomment %}
 
 
 {% schema %}
@@ -7,7 +15,7 @@
     "blocks": [
        {
          "name": "Personal Info",
-         "type": "text",
+         "type": "asd",
          "settings": [
            {
             "type": "text",
