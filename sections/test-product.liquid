@@ -4,7 +4,20 @@
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "blocks": [
+       {
+         "name": "Slide",
+         "type": "slide",
+         "settings": [
+           {
+            "type": "text",
+            "id": "footer_linklist_title",
+            "label": "Heading",
+            "default": "Quick links"
+           }
+         ]
+       }
+    ]
   }
 {% endschema %}
 
