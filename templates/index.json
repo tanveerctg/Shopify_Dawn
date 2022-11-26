@@ -165,7 +165,8 @@
           "type": "testimonial_block",
           "settings": {
             "name": "karim",
-            "comment": "haskjdkjasdlk"
+            "comment": "haskjdkjasdlk",
+            "client_img": "shopify:\/\/shop_images\/model.png"
           }
         },
         "6907ca99-3fb9-4e46-a5a7-762e3f7da42c": {
@@ -175,11 +176,29 @@
             "comment": "asdasd",
             "client_img": "shopify:\/\/shop_images\/model.png"
           }
+        },
+        "f396627c-fbcb-4485-af86-4303925f5178": {
+          "type": "testimonial_block",
+          "settings": {
+            "name": "rahim",
+            "comment": "asdasdasd",
+            "client_img": "shopify:\/\/shop_images\/model.png"
+          }
+        },
+        "fccd8346-68bd-4c95-8d4e-8fb63c41a292": {
+          "type": "testimonial_block",
+          "settings": {
+            "name": "Sterling",
+            "comment": "asdasdasd",
+            "client_img": "shopify:\/\/shop_images\/stylish-man-in-bow-tie.jpg"
+          }
         }
       },
       "block_order": [
         "cc7ffe40-8a3e-4225-858b-0005d8f5c923",
-        "6907ca99-3fb9-4e46-a5a7-762e3f7da42c"
+        "6907ca99-3fb9-4e46-a5a7-762e3f7da42c",
+        "f396627c-fbcb-4485-af86-4303925f5178",
+        "fccd8346-68bd-4c95-8d4e-8fb63c41a292"
       ],
       "settings": {
       }
