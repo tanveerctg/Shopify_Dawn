@@ -1,10 +1,9 @@
   <div class="wrapper">
         <h2>Slick Carousel Example<h2>
             <div class="carousel">
-<!--               {% for block in section.blocks %}
-                {% case block.type %}
+              {% for block in section.blocks %}
+                  {% case block.type %}
                   {% when 'testimonial_block' %}
-                   <span><h3>{{ block.settings.first_name }}</h3></span>  <span><h3>{{ block.settings.last_name }}</h3></span>
                    <div class="carousel-itm">
                         <div class="testimonial-img-container">
                         
@@ -15,11 +14,11 @@
                            {{ block.settings.comment }}
                         </p>
                     </div>
-                   {% endcase %}
-               {% endfor %} -->
+                  {% endcase %}
+               {% endfor %}
 
               
-            <div class="carousel-itm">
+<!--             <div class="carousel-itm">
                 <div class="testimonial-img-container">
                     <img src="https://picsum.photos/300/200?random=1" class="testimonial-img">
                 </div>
@@ -90,11 +89,11 @@
                 <p class="testimonial-description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus aliquid minima earum dolores similique tempora, omnis corporis culpa quidem et deserunt optio.
                 </p>
-            </div>
+            </div> -->
             </div>
       </div>
 
-<!-- {% schema %}
+{% schema %}
   {
     "name": "testimonial",
     "blocks": [
@@ -121,7 +120,7 @@
        }
     ]
   }
-{% endschema %} -->
+{% endschema %}
 
 
           
