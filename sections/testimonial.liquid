@@ -7,8 +7,7 @@
                    <span><h3>{{ block.settings.first_name }}</h3></span>  <span><h3>{{ block.settings.last_name }}</h3></span>
                    <div class="carousel-itm">
                         <div class="testimonial-img-container">
-                            <img src="{{ section.settings.client_img }}" | img_url: '80x80' />
-<!--                          {{ section.settings.image_with_text_image | image_url: width: 1500 | image_tag }} -->
+                         {{ section.settings.client_img | image_url: width: 80 | image_tag }}
                         </div>
                         <h4 class="testimonial-description">{{ block.settings.name }}</h4>
                         <p class="testimonial-description">
