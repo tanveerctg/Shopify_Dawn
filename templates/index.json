@@ -160,6 +160,27 @@
     },
     "dcc36258-a980-4e64-a360-64e93d5a07dd": {
       "type": "testimonial",
+      "blocks": {
+        "cc7ffe40-8a3e-4225-858b-0005d8f5c923": {
+          "type": "testimonial_block",
+          "settings": {
+            "name": "karim",
+            "comment": "haskjdkjasdlk"
+          }
+        },
+        "6907ca99-3fb9-4e46-a5a7-762e3f7da42c": {
+          "type": "testimonial_block",
+          "settings": {
+            "name": "aasd",
+            "comment": "asdasd",
+            "client_img": "shopify:\/\/shop_images\/model.png"
+          }
+        }
+      },
+      "block_order": [
+        "cc7ffe40-8a3e-4225-858b-0005d8f5c923",
+        "6907ca99-3fb9-4e46-a5a7-762e3f7da42c"
+      ],
       "settings": {
       }
     }
