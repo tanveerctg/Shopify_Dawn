@@ -1,7 +1,24 @@
   <div class="wrapper">
         <h2>Slick Carousel Example<h2>
             <div class="carousel">
-            <div class="carousel-itm">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'testimonial_block' %}
+                   <span><h3>{{ block.settings.first_name }}</h3></span>  <span><h3>{{ block.settings.last_name }}</h3></span>
+                   <div class="carousel-itm">
+                        <div class="testimonial-img-container">
+                            <img src="{{ section.settings.client_img }}" />
+                        </div>
+                        <h4 class="testimonial-description">{{ block.settings.name }}</h4>
+                        <p class="testimonial-description">
+                           {{ block.settings.comment }}
+                        </p>
+                    </div>
+                   {% endcase %}
+               {% endfor %}
+
+              
+<!--             <div class="carousel-itm">
                 <div class="testimonial-img-container">
                     <img src="https://picsum.photos/300/200?random=1" class="testimonial-img">
                 </div>
@@ -72,9 +89,41 @@
                 <p class="testimonial-description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus aliquid minima earum dolores similique tempora, omnis corporis culpa quidem et deserunt optio.
                 </p>
+            </div> -->
             </div>
-            </div>
-      </div>   
+      </div>
+
+{% schema %}
+  {
+    "name": "testimonial-section",
+    "blocks": [
+       {
+         "name": "Testimonial Container",
+         "type": "testimonial_block",
+         "settings": [
+           {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+           },
+           {
+            "type": "text",
+            "id": "comment",
+            "label": "Comment"
+           },
+           {
+              "type": "image_picker",
+              "id": "client_img",
+              "label": "Client Image"
+           }
+         ]
+       }
+    ]
+  }
+{% endschema %}
+
+
+          
 {%- stylesheet -%}
   .wrapper{
     width:100%;
