@@ -1,4 +1,4 @@
-   <div class="wrapper">
+  <div class="wrapper">
         <h2>Slick Carousel Example<h2>
             <div class="carousel">
             <div class="carousel-itm">
@@ -75,7 +75,7 @@
             </div>
             </div>
       </div>   
-{%- style -%}
+{%- stylesheet -%}
   .wrapper{
     width:100%;
     padding-top: 20px;
@@ -100,16 +100,19 @@
   .slick-next:before, .slick-prev:before{
     color:#111;
   }
-{%- endstyle -%}
 
-{% schema %}
-  {
-    "name": "Testimonial",
-    "settings":[],
-    "presets": [
-          {
-            "name": "Testimonial"
-          }
-      ]
+  .carousel-itm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-{% endschema %}
+
+  .testimonial-img-container{
+    display: inline-block;
+  }
+  .testimonial-img-container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+  }
+{% endstylesheet %}
