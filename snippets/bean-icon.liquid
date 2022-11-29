@@ -1,1 +1,10 @@
-{%- assign total_steps = steps -%}
+{%- assign total_steps = steps| plus: 0 -%}
+
+{% assign range = (1..5) %}
+{% for i in range %}
+	{% if i <= total_steps %}
+Messi
+	{% else %}
+Ronaldo
+	{% endif %}
+{% endfor %}
