@@ -109,6 +109,18 @@
             "text": "Text block {{ product.metafields.custom.testing_metafield.value }}",
             "text_style": "body"
           }
+        },
+        "729232fa-e496-43b7-89b0-18c8bb255b12": {
+          "type": "collapsible_info",
+          "settings": {
+            "heading": "Coffee Info",
+            "icon": "check_mark",
+            "taste": "adasd",
+            "strength": "asd",
+            "acidity": "asd",
+            "type": "asd",
+            "origin": "asd"
+          }
         }
       },
       "block_order": [
@@ -127,7 +139,8 @@
         "collapsible-row-3",
         "share",
         "title",
-        "5e982c26-74fa-40c1-bba8-38c93c175a37"
+        "5e982c26-74fa-40c1-bba8-38c93c175a37",
+        "729232fa-e496-43b7-89b0-18c8bb255b12"
       ],
       "settings": {
         "enable_sticky_info": true,
