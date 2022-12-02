@@ -57,6 +57,10 @@
 product.selected_or_first_available_variant
 }}
 
+  {% for k in product.selected_or_first_available_variant %}
+    {{ k }}
+  {% endfor %}
+
   
 {% if one ==  product.selected_or_first_available_variant.option2 %}
 <h1 class="details__product {{one }}" data-product_id={{ one }}>
