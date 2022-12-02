@@ -41,9 +41,7 @@
    {% assign two = "" %}
    {% assign twoVariantId = "" %}
 
-  variant --- {{ product.selected_variant.option2 }}
-  one--- {{ one }}
-  two---- {{ two }}
+
   {% for variant in product.variants %}
         {% assign optionName1 = variant.option2 | append:" UNIT" %}
 
@@ -54,14 +52,6 @@
            {% assign two = variant.option2 %}
           {% assign twoVariantId = variant.id %}
         {% endif %}
-
-<!--      {% if variant.id == product.selected_variant.id %}
-        {% if product.metafields.details["{{ variant.option2 }} UNIT"] != 'blank' %}
-          {% assign optionName = variant.option2 | append:" UNIT" %}
-          {% assign optionValue= product.metafields.details[optionName] %}
-          <h1 class="details__product" data-product_id={{ variant.id }}>{{ optionValue }}</h1>
-        {% endif %}
-    {% endif %} -->
   
   {% endfor %}
 
@@ -85,13 +75,7 @@
     {{ two }}
 </h1>
   
-<!-- <h1 data-product_id={{ oneVariantId }} >
-  {{ one }}
-</h1>
-<h1 data-product_id={{ twoVariantId }}>
-  {{ two }}
-</h1>
- -->
+
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
    
     <div class="grid__item product__media-wrapper">
