@@ -53,8 +53,9 @@
         {% endif %}
   
   {% endfor %}
-{{ one }}
-{{ two }}
+{{ 
+product.selected_or_first_available_variant
+}}
 
   
 {% if one ==  product.selected_or_first_available_variant.option2 %}
