@@ -56,6 +56,10 @@
 <h1>hello</h1>
 {{ product.metafields.custom.testing_metafield }}
 
+{% unless product.metafields.custom.testing_metafield == 'blank' %}
+  These shoes are not awesome.
+{% endunless %}  
+
   
 {% if one ==  product.selected_or_first_available_variant.option2 %}
 <h1 class="details__product {{one }}" data-product_id={{ one }}>
