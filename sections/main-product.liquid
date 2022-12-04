@@ -56,7 +56,7 @@
 <h1>hello</h1>
 {{ product.metafields.custom.testing_metafield }}
 
-{% unless product.metafields.custom.testing_metafield == 'blank' %}
+{% unless product.metafields.custom.testing_metafield == blank %}
   These shoes are not awesome.
 {% endunless %}  
 
