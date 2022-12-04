@@ -764,6 +764,10 @@ class VariantSelects extends HTMLElement {
 
     const currentVariantType=this.currentVariant.option2
 
+    const currentVariantContent=allVariants[this.currentVariant.id]
+
+    const productVariant=document.querySelector(".productVariant")
+
     if(currentVariantType==="US"){
       document.querySelector(`.US`).classList?.remove("hideee")   
       document.querySelector(`.EU`).classList.add("hideee") 
