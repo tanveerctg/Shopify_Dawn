@@ -56,6 +56,10 @@
 <h1>hello</h1>
 {{ product.metafields.custom.testing_metafield }}
 
+{{ 
+product.selected_or_first_available_variant.metafields
+}}
+
 {% unless product.metafields.custom.testing_metafield == blank %}
   These shoes are not awesome.
 {% endunless %}  
