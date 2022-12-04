@@ -772,7 +772,7 @@ class VariantSelects extends HTMLElement {
       document.querySelector(`.US`).classList.add("hideee") 
     }
 
-  
+    console.log("allVariants",allVariants)
     console.log("currentVariant data",allVariants[currentVariantType.id])
   
 
