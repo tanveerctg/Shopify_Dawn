@@ -776,6 +776,7 @@ class VariantSelects extends HTMLElement {
       document.querySelector(`.US`).classList.add("hideee") 
     }
 
+    productVariant.textContent=allVariants[this.currentVariant.id]
     console.log("allVariants",allVariants)
     console.log("currentVariant data",currentVariantType,allVariants[this.currentVariant.id])
   
