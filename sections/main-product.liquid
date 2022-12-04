@@ -673,7 +673,7 @@ product.selected_or_first_available_variant.metafields.custom.description
   <script type="application/json" id="variantsInfo">
     {     
       {%- for variant in product.variants -%}      
-            "{{ variant.id }}":"{{ variant.metafields.description.details  }}"{% if forloop.last == true %}{% else %},{% endif %}     
+            "{{ variant.id }}":"{{ variant.metafields.custom.description  }}"{% if forloop.last == true %}{% else %},{% endif %}     
       {%- endfor -%}
     }
   </script>
