@@ -773,7 +773,7 @@ class VariantSelects extends HTMLElement {
     }
 
     console.log("allVariants",allVariants)
-    console.log("currentVariant data",allVariants[currentVariantType.id])
+    console.log("currentVariant data",currentVariantType.id,allVariants[currentVariantType.id])
   
 
     if (!this.currentVariant) {
