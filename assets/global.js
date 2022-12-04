@@ -755,9 +755,11 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-    console.log("document.allVariants",document.allVariants)
-    console.log("this.getVariantData()",this.getVariantData())
+    // console.log("document.allVariants",document.allVariants)
+    // console.log("this.getVariantData()",this.getVariantData())
 
+    const allVariants=JSON.parse(document.allVariants)
+  
     const productDetails = document.querySelectorAll(".details__product");
 
     const currentVariantType=this.currentVariant.option2
@@ -770,24 +772,8 @@ class VariantSelects extends HTMLElement {
       document.querySelector(`.US`).classList.add("hideee") 
     }
 
-    
-    // productDetails.forEach(product=>{
-    //   console.log(product.className,Array.from(product.classList))
-    //   //
-    //   if(product.className.includes(currentVariantType)){
-    //     console.log("Correct",currentVariantType)
-    //      document.querySelector(`.details__product.${product.classList[1]}`).classList.add("hideee")
-    //      document.querySelector(`.${currentVariantType}`).classList?.remove("hideee") 
-    //   }else{
-    //     console.log("In Correct",product.className,product.classList[1])
-    //      document.querySelector(`.details__product.${product.classList[1]}`).classList?.remove("hideee") 
-    //      document.querySelector(`.${currentVariantType}`).classList.add("hideee")
-    //   }
-      
-    // })
-    //get details
-    // console.log("Product Id",productDetails.dataset.product_id); 
-    console.log("this.currentVariant",this.currentVariant)
+  
+    console.log("currentVariant data",allVariants[currentVariantType.id])
   
 
     if (!this.currentVariant) {
