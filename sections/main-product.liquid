@@ -679,7 +679,7 @@ product.selected_or_first_available_variant.metafields.custom.description
   </script>
   <script>
     document.allVariants=document.getElementById("variantsInfo").textContent
-    console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.getElementById("variantsInfo").textContent))
+    console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.allVariant))
   </script>
   
   {%- if product.media.size > 0 -%}
