@@ -56,7 +56,7 @@
 <h1>hello</h1>
 {{ product.metafields.custom.testing_metafield }}
 
-<h1 class="productVariant">{{ product.selected_or_first_available_variant.metafields.custom.description}}</h1>
+<h1 class="productVariant">Product Variant {{ product.selected_or_first_available_variant.metafields.custom.description}}</h1>
 
 {% for variant in product.variants %}
    <h1 class="productVariant">{{variant.id}}----{{ variant.inventory_quantity }}</h1>
