@@ -779,8 +779,8 @@ class VariantSelects extends HTMLElement {
       document.querySelector(`.US`).classList.add("hideee") 
     }
 
-    productVariant.textContent=allVariants[this.currentVariant.id].description
-    variantInventory.textContent=allVariants[this.currentVariant.id].inventory_quantity
+    productVariant.textContent="Product Variant "+allVariants[this.currentVariant.id].description
+    variantInventory.textContent="Inventory Quantity "+allVariants[this.currentVariant.id].inventory_quantity
     console.log("allVariants",allVariants)
     console.log("currentVariant data",currentVariantType,allVariants[this.currentVariant.id])
   
