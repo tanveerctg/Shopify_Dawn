@@ -780,6 +780,7 @@ class VariantSelects extends HTMLElement {
     }
 
     productVariant.textContent=allVariants[this.currentVariant.id].description
+    variantInventory.textContent=allVariants[this.currentVariant.id].inventory_quantity
     console.log("allVariants",allVariants)
     console.log("currentVariant data",currentVariantType,allVariants[this.currentVariant.id])
   
