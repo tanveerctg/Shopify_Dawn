@@ -766,7 +766,7 @@ class VariantSelects extends HTMLElement {
 
     const currentVariantContent=allVariants[this.currentVariant.id]
 
-    console.log(JSON.parse(currentVariantContent))
+    console.log(currentVariantContent)
 
     const productVariant=document.querySelector(".productVariant")
 
