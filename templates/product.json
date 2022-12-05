@@ -3,6 +3,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "d4cd290d-cb23-400d-95f2-25166fa55548": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<textarea \n                \n                        name=\"message\"\n                        id=\"Message-{{ section.id }}\"\n                        placeholder=\"Enter Your Message\"\n                        form=\"{{ product_form_id }}\"><\/textarea>"
+          }
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -124,6 +130,7 @@
         }
       },
       "block_order": [
+        "d4cd290d-cb23-400d-95f2-25166fa55548",
         "vendor",
         "b3bdc86d-2418-44cc-8f35-dd26874cf0fe",
         "caption",
