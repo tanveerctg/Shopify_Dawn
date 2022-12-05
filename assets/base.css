@@ -2,6 +2,9 @@
 .productVariant{
   font-size:55px;
 }
+.variantInventory{
+    font-size:55px;
+}
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
