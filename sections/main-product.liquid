@@ -408,11 +408,12 @@
                     </button>
                   </quantity-input>
                 </div>
-                <textarea  type="text"
+                <textarea 
+                
                         name="message"
                         id="Message-{{ section.id }}"
                         placeholder="Enter Your Message"
-                        form="{{ product_form_id }}"/>
+                        form="{{ product_form_id }}"></textarea>
               {%- when 'popup' -%}
                   <modal-opener class="product-popup-modal__opener no-js-hidden quick-add-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                     <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
