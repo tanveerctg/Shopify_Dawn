@@ -58,7 +58,9 @@
 
 <h1 class="productVariant">{{ product.selected_or_first_available_variant.metafields.custom.description}}</h1>
 
-  <h1 class="productVariant">{{ product.selected_or_first_available_variant.inventory_quantity}}</h1>
+{% for variant in product.variants %}
+   <h1 class="productVariant">{{ variant.inventory_quantity }}</h1>
+{% endfor %}
 
 {% unless product.metafields.custom.testing_metafield == blank %}
   These shoes are not awesome.
