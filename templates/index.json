@@ -3,18 +3,18 @@
     "16619623154733b98b": {
       "type": "image-banner",
       "blocks": {
-        "1661962315088c926b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
         "1661962315088c926b-1": {
           "type": "text",
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
+          }
+        },
+        "1661962315088c926b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
           }
         },
         "1661962315088c926b-2": {
@@ -30,8 +30,8 @@
         }
       },
       "block_order": [
-        "1661962315088c926b-0",
         "1661962315088c926b-1",
+        "1661962315088c926b-0",
         "1661962315088c926b-2"
       ],
       "settings": {
@@ -71,12 +71,21 @@
             "button_label": "Button label",
             "button_link": ""
           }
+        },
+        "461d8c6c-0e5b-442e-b47d-d4abd42fa86d": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
         "1661962708f82302e4-0",
         "1661962708f82302e4-1",
-        "1661962708f82302e4-2"
+        "1661962708f82302e4-2",
+        "461d8c6c-0e5b-442e-b47d-d4abd42fa86d"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/homepage_1.jpg",
@@ -115,12 +124,21 @@
             "button_label": "Button label",
             "button_link": ""
           }
+        },
+        "6578ac07-3ebc-4adc-b27f-3b5dda5cc7a2": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
         "16619628460598d699-0",
         "16619628460598d699-1",
-        "16619628460598d699-2"
+        "16619628460598d699-2",
+        "6578ac07-3ebc-4adc-b27f-3b5dda5cc7a2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/homepage_2.jpg",
@@ -170,13 +188,21 @@
             "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
             "client_img": "shopify:\/\/shop_images\/stylish-man-in-bow-tie.jpg"
           }
+        },
+        "265d756f-3d51-476c-8d56-9b5efa7d918d": {
+          "type": "testimonial_block",
+          "settings": {
+            "name": "asd",
+            "comment": "asd"
+          }
         }
       },
       "block_order": [
         "cc7ffe40-8a3e-4225-858b-0005d8f5c923",
         "6907ca99-3fb9-4e46-a5a7-762e3f7da42c",
         "f396627c-fbcb-4485-af86-4303925f5178",
-        "fccd8346-68bd-4c95-8d4e-8fb63c41a292"
+        "fccd8346-68bd-4c95-8d4e-8fb63c41a292",
+        "265d756f-3d51-476c-8d56-9b5efa7d918d"
       ],
       "settings": {
       }
