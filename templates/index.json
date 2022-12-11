@@ -193,7 +193,8 @@
           "type": "testimonial_block",
           "settings": {
             "name": "asd",
-            "comment": "asd"
+            "comment": "asd",
+            "client_img": "shopify:\/\/shop_images\/model.png"
           }
         }
       },
