@@ -695,14 +695,6 @@
     console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.allVariants))
   </script>
 
-  <script>
-    const obj={};  
-    {%- for variant in product.variants -%}      
-            // "{{ variant.id }}":{"description":"{{ variant.metafields.custom.description  }}","inventory_quantity":{{ variant.inventory_quantity }}}{% if forloop.last == true %}{% else %},{% endif %}     
-         obj["a"]={description:"b"}
-    {%- endfor -%}
-    console.log({obj})
-  </script>
   
   {%- if product.media.size > 0 -%}
     <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
