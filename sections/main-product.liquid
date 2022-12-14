@@ -699,7 +699,7 @@
     const obj={};  
     {%- for variant in product.variants -%}      
             // "{{ variant.id }}":{"description":"{{ variant.metafields.custom.description  }}","inventory_quantity":{{ variant.inventory_quantity }}}{% if forloop.last == true %}{% else %},{% endif %}     
-         obj[variant.id]={description:variant.metafields.custom.description}
+         obj[{{variant.id}}]={description:{{variant.metafields.custom.description}}}
     {%- endfor -%}
     console.log({obj})
   </script>
