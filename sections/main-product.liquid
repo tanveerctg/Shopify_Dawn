@@ -696,13 +696,12 @@
   </script>
 
   <script>
-    const obj={};
-    {     
-      {%- for variant in product.variants -%}      
+    const obj={};  
+    {%- for variant in product.variants -%}      
             // "{{ variant.id }}":{"description":"{{ variant.metafields.custom.description  }}","inventory_quantity":{{ variant.inventory_quantity }}}{% if forloop.last == true %}{% else %},{% endif %}     
          obj[variant.id]={description:variant.metafields.custom.description}
-      {%- endfor -%}
-    }
+    {%- endfor -%}
+    console.log({obj})
   </script>
   
   {%- if product.media.size > 0 -%}
