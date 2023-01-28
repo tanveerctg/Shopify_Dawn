@@ -229,6 +229,46 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "0002c2cc-0592-4b24-91a7-3be868297576": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15276672581771__0002c2cc-0592-4b24-91a7-3be868297576-16749190864685ca0f-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "adidas"
+          }
+        },
+        "template--15276672581771__0002c2cc-0592-4b24-91a7-3be868297576-16749190864685ca0f-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nike"
+          }
+        },
+        "template--15276672581771__0002c2cc-0592-4b24-91a7-3be868297576-16749190864685ca0f-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "palladuim"
+          }
+        }
+      },
+      "block_order": [
+        "template--15276672581771__0002c2cc-0592-4b24-91a7-3be868297576-16749190864685ca0f-0",
+        "template--15276672581771__0002c2cc-0592-4b24-91a7-3be868297576-16749190864685ca0f-1",
+        "template--15276672581771__0002c2cc-0592-4b24-91a7-3be868297576-16749190864685ca0f-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
@@ -236,6 +276,7 @@
     "1661962708adc2b777",
     "1661962846e0de2a2e",
     "dcc36258-a980-4e64-a360-64e93d5a07dd",
-    "16639964221eaf5659"
+    "16639964221eaf5659",
+    "0002c2cc-0592-4b24-91a7-3be868297576"
   ]
 }
