@@ -7,8 +7,8 @@
           "type": "shippping_bar",
           "settings": {
             "shiping_content": "We will deliver your products in 24 hours",
-            "bg_color": "",
-            "text_color": ""
+            "bg_color": "#ff0000",
+            "text_color": "#ffffff"
           }
         },
         "d4cd290d-cb23-400d-95f2-25166fa55548": {
