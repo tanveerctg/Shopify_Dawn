@@ -295,6 +295,13 @@ Shipping Bar
              
           {% else %}
               {%- case block.type -%}
+
+                
+              {%- when 'shippping_bar' -%}
+              <div>
+                 {{ block.settings.shiping_content  }}
+              </div>
+                
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
