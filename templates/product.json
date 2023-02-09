@@ -6,6 +6,7 @@
         "12aaaba4-88bd-41af-953c-10b627934a73": {
           "type": "shippping_bar",
           "settings": {
+            "font_size": 18,
             "shiping_content": "We will deliver your products in 24 hours",
             "bg_color": "#ff0000",
             "text_color": "#ffffff"
