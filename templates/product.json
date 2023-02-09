@@ -3,6 +3,14 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "12aaaba4-88bd-41af-953c-10b627934a73": {
+          "type": "shippping_bar",
+          "settings": {
+            "shiping_content": "We will deliver your products in 24 hours",
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
         "d4cd290d-cb23-400d-95f2-25166fa55548": {
           "type": "custom_liquid",
           "settings": {
@@ -80,6 +88,13 @@
             "page": ""
           }
         },
+        "5e982c26-74fa-40c1-bba8-38c93c175a37": {
+          "type": "text",
+          "settings": {
+            "text": "Text block {{ product.metafields.custom.testing_metafield.value }}",
+            "text_style": "body"
+          }
+        },
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
@@ -109,13 +124,6 @@
           "settings": {
           }
         },
-        "5e982c26-74fa-40c1-bba8-38c93c175a37": {
-          "type": "text",
-          "settings": {
-            "text": "Text block {{ product.metafields.custom.testing_metafield.value }}",
-            "text_style": "body"
-          }
-        },
         "729232fa-e496-43b7-89b0-18c8bb255b12": {
           "type": "collapsible_info",
           "settings": {
@@ -127,9 +135,19 @@
             "type": "asd",
             "origin": "asd"
           }
+        },
+        "583d08e5-067d-456a-b935-d00910a6a958": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
+        "12aaaba4-88bd-41af-953c-10b627934a73",
         "d4cd290d-cb23-400d-95f2-25166fa55548",
         "vendor",
         "b3bdc86d-2418-44cc-8f35-dd26874cf0fe",
@@ -142,14 +160,16 @@
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
+        "5e982c26-74fa-40c1-bba8-38c93c175a37",
         "collapsible-row-2",
         "collapsible-row-3",
         "share",
         "title",
-        "5e982c26-74fa-40c1-bba8-38c93c175a37",
-        "729232fa-e496-43b7-89b0-18c8bb255b12"
+        "729232fa-e496-43b7-89b0-18c8bb255b12",
+        "583d08e5-067d-456a-b935-d00910a6a958"
       ],
       "settings": {
+        "Shipping_Bar": "",
         "enable_sticky_info": true,
         "gallery_layout": "stacked",
         "media_size": "large",
