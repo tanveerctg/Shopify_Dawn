@@ -352,6 +352,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "adae2579-a264-4094-8189-cf3d71b57121": {
+      "type": "faq",
+      "blocks": {
+        "cb07b8ab-3455-4cbf-b7a6-a2e1a68d9e8e": {
+          "type": "QA",
+          "settings": {
+            "question": "sdafsadfsda",
+            "answer": "asddfsa"
+          }
+        }
+      },
+      "block_order": [
+        "cb07b8ab-3455-4cbf-b7a6-a2e1a68d9e8e"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -360,6 +377,7 @@
     "image-with-text",
     "multicolumn",
     "product-recommendations",
-    "4109b3bb-8157-480f-ba8f-3622a174f2b6"
+    "4109b3bb-8157-480f-ba8f-3622a174f2b6",
+    "adae2579-a264-4094-8189-cf3d71b57121"
   ]
 }
