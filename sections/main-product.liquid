@@ -301,6 +301,12 @@ Shipping Bar
               <div style="background:{{ block.settings.bg_color }};color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;">
                  {{ block.settings.shiping_content  }}
               </div>
+
+              {%- when 'inventory_quantity' -%}
+              {% unless block.settings.should_inventory_quantity_show == blank %}
+                <p class="variantInventory" style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;">{{ product.selected_or_first_available_variant.inventory_quantity }} products left</p>
+              {% endunless %}
+           
                 
               {%- when '@app' -%}
                 {% render block %}
@@ -833,7 +839,7 @@ Shipping Bar
           },
          {
             "type": "checkbox",
-            "id": "should_inventory_show",
+            "id": "should_inventory_quantity_show",
             "label": "Do you want to show inventory quantity?",
             "default": false
          },
