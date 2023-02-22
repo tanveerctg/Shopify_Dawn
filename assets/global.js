@@ -769,7 +769,7 @@ class VariantSelects extends HTMLElement {
     console.log(currentVariantContent)
 
     const productVariant=document.querySelector(".productVariant")
-    const variantInventory=document.querySelector(".variantInventory")
+    const variantInventory=document.querySelector(".variantInventoryQuantity")
 
     if(currentVariantType==="US"){
       document.querySelector(`.US`).classList?.remove("hideee")   
