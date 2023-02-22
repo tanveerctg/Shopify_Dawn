@@ -6,7 +6,7 @@
         "5470e9cd-3c43-442f-b81a-c4dceb2ac41a": {
           "type": "inventory_quantity",
           "settings": {
-            "font_size": 19,
+            "font_size": 18,
             "should_inventory_quantity_show": true,
             "threshold": 10,
             "text_color": "#ff4545"
