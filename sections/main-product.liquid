@@ -818,6 +818,39 @@ Shipping Bar
       "type": "@app"
     },
     {
+       "name": "Inventory Quantity",
+       "type": "inventory_quantity",
+       "settings": [
+         {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size",
+            "default": 16
+          },
+         {
+            "type": "checkbox",
+            "id": "should_inventory_show",
+            "label": "Do you want to show inventory quantity?",
+            "default": false
+         },
+         {
+            "type": "number",
+            "id": "threshold",
+            "label": "Threshold",
+            "default": 10
+         },
+         {
+           "type": "color",
+           "id": "text_color",
+           "label": "Text Color"
+         }
+       ]
+     },
+    {
        "name": "Shipping Bar",
        "type": "shippping_bar",
        "settings": [
