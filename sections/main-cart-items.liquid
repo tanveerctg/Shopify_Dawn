@@ -22,7 +22,7 @@
 {%- unless settings.cart_type == 'drawer' -%}
   <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 {%- endunless -%}
-
+ <h1 class="text-6xl text-sky-400/100">{{ line_item.final_price  }}</h1>
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
@@ -44,7 +44,6 @@
   </div>
 
   <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
-   <h1 class="text-6xl text-sky-400/100">{{ line_item.final_price  }}</h1>
     <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
       <div class="js-contents">
         {%- if cart != empty -%}
