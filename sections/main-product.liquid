@@ -90,7 +90,7 @@
   {% for product in product.metafields.custom.related_products.value %}
     {% if product.available %}
       <a href="{{ product.url }}">
-      {{ product.featured_image | image_url: width: 'master' | image_tag }}
+      {{ product.featured_image | image_url: width: 200 | image_tag }}
       </a>
     {% endif %}
   {% endfor %}
