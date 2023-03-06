@@ -88,7 +88,9 @@
   
 <h1>
   {% for product in product.metafields.custom.related_products.value %}
-    {{ product.available }}
+    {% if product.available %}
+      {{ product.featured_image | image_url: width: 500 | image_tag }}
+    {% endif %}
   {% endfor %}
   
   
