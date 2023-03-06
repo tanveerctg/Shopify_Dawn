@@ -159,6 +159,11 @@
           "type": "message",
           "settings": {
           }
+        },
+        "c59e16a6-5d0a-4cf7-b01c-f0e1c192b706": {
+          "type": "related_products",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -183,7 +188,8 @@
         "title",
         "729232fa-e496-43b7-89b0-18c8bb255b12",
         "583d08e5-067d-456a-b935-d00910a6a958",
-        "b6b9d9ff-ab34-42c8-a210-cce5031cf946"
+        "b6b9d9ff-ab34-42c8-a210-cce5031cf946",
+        "c59e16a6-5d0a-4cf7-b01c-f0e1c192b706"
       ],
       "settings": {
         "Shipping_Bar": "",
