@@ -87,13 +87,6 @@
 </h1>
   
 <h1>
-  {% for product in product.metafields.custom.related_products.value %}
-    {% if product.available %}
-      <a href="{{ product.url }}">
-      {{ product.featured_image | image_url: width: 200 | image_tag }}
-      </a>
-    {% endif %}
-  {% endfor %}
   
   
 Shipping Bar
@@ -310,6 +303,15 @@ Shipping Bar
               <div style="background:{{ block.settings.bg_color }};color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;">
                  {{ block.settings.shiping_content  }}
               </div>
+
+              {%- when 'related_products' -%}
+              {% for product in product.metafields.custom.related_products.value %}
+                {% if product.available %}
+                  <a href="{{ product.url }}">
+                  {{ product.featured_image | image_url: width: 200 | image_tag }}
+                  </a>
+                {% endif %}
+              {% endfor %}
 
               {%- when 'inventory_quantity' -%}
               {% unless block.settings.should_inventory_quantity_show == blank %}
@@ -831,6 +833,10 @@ Shipping Bar
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+       "name": "Related Products",
+       "type": "related_products"
     },
     {
        "name": "Inventory Quantity",
