@@ -3,6 +3,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "c59e16a6-5d0a-4cf7-b01c-f0e1c192b706": {
+          "type": "related_products",
+          "settings": {
+            "font_size": 16,
+            "should_inventory_quantity_show": false,
+            "threshold": 10,
+            "text_color": ""
+          }
+        },
         "5470e9cd-3c43-442f-b81a-c4dceb2ac41a": {
           "type": "inventory_quantity",
           "settings": {
@@ -159,14 +168,10 @@
           "type": "message",
           "settings": {
           }
-        },
-        "c59e16a6-5d0a-4cf7-b01c-f0e1c192b706": {
-          "type": "related_products",
-          "settings": {
-          }
         }
       },
       "block_order": [
+        "c59e16a6-5d0a-4cf7-b01c-f0e1c192b706",
         "5470e9cd-3c43-442f-b81a-c4dceb2ac41a",
         "12aaaba4-88bd-41af-953c-10b627934a73",
         "d4cd290d-cb23-400d-95f2-25166fa55548",
@@ -188,8 +193,7 @@
         "title",
         "729232fa-e496-43b7-89b0-18c8bb255b12",
         "583d08e5-067d-456a-b935-d00910a6a958",
-        "b6b9d9ff-ab34-42c8-a210-cce5031cf946",
-        "c59e16a6-5d0a-4cf7-b01c-f0e1c192b706"
+        "b6b9d9ff-ab34-42c8-a210-cce5031cf946"
       ],
       "settings": {
         "Shipping_Bar": "",
