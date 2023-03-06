@@ -87,6 +87,10 @@
 </h1>
   
 <h1>
+  {% for product in product.metafields.custom.related_products.value %}
+    {{ product.featured_image }}
+  {% endfor %}
+  
   {{ product.metafields.custom.related_products.value|json }}
 Shipping Bar
   {{ section.settings.Shipping_Bar }}
