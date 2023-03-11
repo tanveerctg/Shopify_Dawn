@@ -726,10 +726,10 @@ Shipping Bar
   <script>
     const containers={}
     {% for product in product.metafields.custom.related_products.value %}
-      {% if product.available %}
+
         // containers[product.id]=product.images
-        console.log("{containers}",containers[product.id])
-      {% endif %}
+        console.log("{containers}",product.id)
+    
     {% endfor %}
   </script>
   <script type="application/json" id="variantsInfo">
