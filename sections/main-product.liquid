@@ -742,7 +742,7 @@ Shipping Bar
       filteredMetaFields[productId]=metaFields[productId].split(',')
     })
    productIds.forEach(productId=>{
-     document.querySelector(`.${productId}`).addEventListener('hover',(e)=>{
+     document.querySelector(`.${productId}`).addEventListener('mouseover',(e)=>{
        console.log(e.target)
      })
    })
