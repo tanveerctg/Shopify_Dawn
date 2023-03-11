@@ -741,9 +741,17 @@ Shipping Bar
     productIds.forEach((productId)=>{
       filteredMetaFields[productId]=metaFields[productId].split(',')
     })
+   let i=0
+   let interval
    productIds.forEach(productId=>{
      document.getElementById(`${productId}`).addEventListener('mouseover',(e)=>{
-       console.log(e.target)
+       interval=setInterval(()=>{
+         i=i+1
+       },500)
+     })
+     document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
+       console.log(e)
+       clearInterval(interval)
      })
    })
     console.log("Meta Fields",metaFields)
