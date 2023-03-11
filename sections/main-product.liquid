@@ -723,11 +723,13 @@ Shipping Bar
         <h2>{{ variant.id }}</h2>--<h2>{{ variant.metafields.description.details }}</h2>           
   {%- endfor -%}
 
-                          <script>
+  <script>
+    const containers={}
      {% for product in product.metafields.custom.related_products.value %}
         console.log({{product.id}})
+        containers[{{product.id}}]={{product.images}}
       {% endfor %}
-                          </script>
+  </script>
 
   <script type="application/json" id="productsMetafields">
     {
