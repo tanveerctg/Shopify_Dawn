@@ -308,6 +308,7 @@ Shipping Bar
               <h3>Related Products</h3>
               {% for product in product.metafields.custom.related_products.value %}
                 {% if product.available %}
+                  {{ product |json }}
                   <a href="{{ product.url }}" id="{{ product.id }}">
                   {{ product.featured_image | image_url: width: 200 | image_tag }}
                   </a>
