@@ -749,7 +749,11 @@ Shipping Bar
        interval=setInterval(()=>{
          i=i+1
        console.log(document.getElementById(`${productId}`).querySelector('img').src)
-        document.getElementById(`${productId}`).querySelector('img').src= filteredMetaFields[productId][i]
+         if(filteredMetaFields[productId][i]){
+          document.getElementById(`${productId}`).querySelector('img').src= filteredMetaFields[productId][i]
+         }else{
+           i=0
+         }
        },1000)
      })
      document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
