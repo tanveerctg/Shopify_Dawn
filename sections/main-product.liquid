@@ -736,6 +736,8 @@ Shipping Bar
     }
   </script>
   <script>
+    console.log(document.getElementById("productsMetafields").textContent)
+    return
     const metaFields=JSON.parse(document.getElementById("productsMetafields").textContent)
     const filteredMetaFields={}
     const productIds=Object.keys(metaFields)
