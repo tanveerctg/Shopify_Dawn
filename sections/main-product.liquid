@@ -729,7 +729,7 @@ Shipping Bar
   <script type="application/json" id="productsMetafields">
     {
       {% for product in product.metafields.custom.related_products.value %}
-        "{{ product.id }}":"{{  product.images | json  }}" {% if forloop.last == true %}{% else %},{% endif %} 
+        "{{ product.id }}":"{{ product.images | join:',' }}" {% if forloop.last == true %}{% else %},{% endif %} 
       {% endfor %}
       
     }
@@ -752,7 +752,7 @@ Shipping Bar
          i=i+1
        console.log(document.getElementById(`${productId}`).querySelector('img').src)
          if(filteredMetaFields[productId][i]){
-          document.getElementById(`${productId}`).querySelector('img').src= '/'+filteredMetaFields[productId][i]
+          document.getElementById(`${productId}`).querySelector('img').src= {{ product.path }}+filteredMetaFields[productId][i]
          }else{
            i=0
          }
