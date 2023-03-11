@@ -726,7 +726,7 @@ Shipping Bar
   <script>
     const containers={}
      {% for product in product.metafields.custom.related_products.value %}
-        console.log({{product.id}})
+    
         containers[{{product.id}}]={{product.images}}
       {% endfor %}
       console.log({containers})
