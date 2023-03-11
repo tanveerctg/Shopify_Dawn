@@ -723,6 +723,12 @@ Shipping Bar
         <h2>{{ variant.id }}</h2>--<h2>{{ variant.metafields.description.details }}</h2>           
   {%- endfor -%}
 
+                          <script>
+ {% for product in product.metafields.custom.related_products.value %}
+        "{{ product.id }}":"{{ product.images }}" {% if forloop.last == true %}{% else %},{% endif %} 
+      {% endfor %}
+                          </script>
+
   <script type="application/json" id="productsMetafields">
     {
       {% for product in product.metafields.custom.related_products.value %}
