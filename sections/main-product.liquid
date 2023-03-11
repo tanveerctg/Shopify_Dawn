@@ -730,6 +730,7 @@ Shipping Bar
       {% for product in product.metafields.custom.related_products.value %}
         "{{ product.id }}":"{{ product.images }}" {% if forloop.last == true %}{% else %},{% endif %} 
       {% endfor %}
+      
     }
   </script>
   <script>
