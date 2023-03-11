@@ -728,10 +728,7 @@ Shipping Bar
   <script type="application/json" id="productsMetafields">
     {
       {% for product in product.metafields.custom.related_products.value %}
-        {% for image in product.images %}
-          "{{ product.id }}":"{{ image }}"{% if forloop.last == true %}{% else %},{% endif %} 
-        {% endfor %}
-        {% if forloop.last == true %}{% else %},{% endif %} 
+        "{{ product.id }}":"{{ product.images }}" {% if forloop.last == true %}{% else %},{% endif %} 
       {% endfor %}
     }
   </script>
