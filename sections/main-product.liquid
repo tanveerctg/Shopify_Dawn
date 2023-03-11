@@ -729,7 +729,7 @@ Shipping Bar
   <script type="application/json" id="productsMetafields">
     {
       {% for product in product.metafields.custom.related_products.value %}
-        "{{ product.id }}":{{  product.images | json | join:',' }} {% if forloop.last == true %}{% else %},{% endif %} 
+        "{{ product.id }}":"{{  product.images | json  }}" {% if forloop.last == true %}{% else %},{% endif %} 
       {% endfor %}
       
     }
