@@ -724,8 +724,13 @@ Shipping Bar
   {%- endfor -%}
 
   <script>
-
-    console.log("{containers}")
+    const containers={}
+    {% for product in product.metafields.custom.related_products.value %}
+      {% if product.available %}
+        // containers[product.id]=product.images
+        console.log("{containers}",containers[product.id])
+      {% endif %}
+    {% endfor %}
   </script>
   <script type="application/json" id="variantsInfo">
     {     
