@@ -736,8 +736,9 @@ Shipping Bar
   <script>
     const metaFields=JSON.parse(document.getElementById("productsMetafields").textContent)
     const filteredMetaFields={}
+    const productIds=Object.keys(metaFields)
 
-    Object.keys(metaFields).forEach((productId)=>{
+    productIds.forEach((productId)=>{
       filteredMetaFields[productId]=metaFields[productId].split(',')
     })
     console.log("Meta Fields",metaFields)
