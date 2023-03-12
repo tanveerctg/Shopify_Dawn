@@ -727,7 +727,7 @@ Shipping Bar
 
 
 
-  <script  id="productsMetafields">
+  <script type="application/json"  id="productsMetafields">
     
       {% for product in product.metafields.custom.related_products.value %}
         {{ product.id }}:{{ product.images|join:','  }}
