@@ -733,10 +733,8 @@ Shipping Bar
       {% endfor %}
     }
   </script>
+
   <script>
-      console.log(JSON.parse(document.getElementById("productsMetafields").textContent))
-  </script>
-<!--   <script>
     console.log(document.getElementById("productsMetafields").textContent)
 
     const metaFields=JSON.parse(document.getElementById("productsMetafields").textContent)
@@ -770,7 +768,7 @@ Shipping Bar
    })
     console.log("Meta Fields",metaFields)
     console.log("filteredMetaFields",filteredMetaFields)
-  </script> -->
+  </script>
   <script type="application/json" id="variantsInfo">
     {     
       {%- for variant in product.variants -%}      
