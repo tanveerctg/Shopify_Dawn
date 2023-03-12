@@ -726,20 +726,15 @@ Shipping Bar
 
 
 
-  <script  id="productsMetafields">
-<!--     {
+  <script type="application/json"  id="productsMetafields">
+    {
       {% for product in product.metafields.custom.related_products.value %}
-        "{{ product.id }}":"{{ product.media|join:','  }}" {% if forloop.last == true %}{% else %},{% endif %}   
+        "{{ product.id }}":"{{ product.images|join:','  }}" {% if forloop.last == true %}{% else %},{% endif %}   
       {% endfor %}
-    } -->
-   {% for product in product.metafields.custom.related_products.value %}
-       {% for image in product.images %}
-          {{ image.src }}
-       {% endfor %}
-   {% endfor %}
+    }
   </script>
   <script>
-      console.log((document.getElementById("productsMetafields").textContent))
+      console.log(JSON.parse(document.getElementById("productsMetafields").textContent))
   </script>
 <!--   <script>
     console.log(document.getElementById("productsMetafields").textContent)
