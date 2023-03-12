@@ -743,7 +743,9 @@ Shipping Bar
   // })
 </script>
 <script type="application/json" id="productHandle">
+  {
   "{{ product.id }}":"{{product.handle}}"
+  }
 </script>
 <script>
     console.log(JSON.parse(document.getElementById("productHandle").textContent))
