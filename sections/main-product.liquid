@@ -92,7 +92,7 @@
   {{handle}}
 Shipping Bar
   {{ section.settings.Shipping_Bar }}
-  window.Shopify.routes.root 
+
 </h1>
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
    
@@ -736,13 +736,13 @@ Shipping Bar
     }
   </script> -->
 <script>
-
+console.log("Root",window.Shopify.routes.root)
 
   // console.log("URL",{{ product.url }},"Handle",{{product.handle}})
 
-  fetch(`${window.Shopify.routes.root}{{product.handle}}'.json'`).then((res)=>{
-    console.log({res})
-  })
+  // fetch(`${window.Shopify.routes.root}{{product.handle}}'.json'`).then((res)=>{
+  //   console.log({res})
+  // })
 
   
 </script>
