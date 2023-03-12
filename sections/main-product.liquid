@@ -741,7 +741,7 @@ Shipping Bar
 
   // console.log("URL",{{ product.url }},"Handle",{{product.handle}})
 
-  fetch(window.Shopify.routes.root + {{product.handle}}).then((res)=>{
+  fetch(window.Shopify.routes.root + {{product.handle}}+'.json').then((res)=>{
     console.log({res})
   })
 
