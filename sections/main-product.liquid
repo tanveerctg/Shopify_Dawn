@@ -732,8 +732,10 @@ Shipping Bar
         "{{ product.id }}":"{{ product.media|join:','  }}" {% if forloop.last == true %}{% else %},{% endif %}   
       {% endfor %}
     } -->
-   {% for image in product.metafields.custom.related_products.value %}
-      {{ image.src }}
+   {% for product in product.metafields.custom.related_products.value %}
+       {% for image in product.images %}
+          {{ image.src }}
+       {% endfor %}
    {% endfor %}
   </script>
   <script>
