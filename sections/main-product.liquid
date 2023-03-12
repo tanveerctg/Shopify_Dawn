@@ -742,12 +742,12 @@ Shipping Bar
   //   console.log({res})
   // })
 </script>
-<script id="productHandle">
-  {{product.handle}}
+<script type="application/json" id="productHandle">
+  "{{ product.id }}":"{{product.handle}}"
 </script>
-                    <script>
-                      console.log(document.getElementById("productHandle").textContent)
-                    </script>
+<script>
+    console.log(JSON.parse(document.getElementById("productHandle").textContent))
+</script>
 <!--   <script>
     console.log(document.getElementById("productsMetafields").textContent)
 
