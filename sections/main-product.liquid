@@ -721,28 +721,9 @@ Shipping Bar
     </modal-dialog>
   {%- endfor -%}
 
-{% assign product_json = product | json %}
-
-{% for image in product.metafields.custom.related_products.value %}
-  {% if image.position == 1 %}
-    <script>
-      var imageUrl = "{{ image.src | img_url }}";
-      // do something with imageUrl, such as display it on the page
-    </script>
-  {% endif %}
-{% endfor %}
-
-      {% for product in product.metafields.custom.related_products.value %}
-          {% for image in product.images %}
-           
-              <script>
-                var imageUrl = "{{ image.src | img_url }}";
-                console.log({imageUrl})
-                // do something with imageUrl, such as display it on the page
-              </script>
-        
-          {% endfor %}
-      {% endfor %}
+  {%- for variant in product.variants -%}
+        <h2>{{ variant.id }}</h2><h2>{{ variant.metafields.description.details }}</h2>           
+  {%- endfor -%}
 
 
 
@@ -760,7 +741,7 @@ Shipping Bar
 
   // console.log("URL",{{ product.url }},"Handle",{{product.handle}})
 
-  fetch(window.Shopify.routes.root + {{product.handle}}+'.json').then((res)=>{
+  fetch(`${window.Shopify.routes.root}{{product.handle}}'.json'`).then((res)=>{
     console.log({res})
   })
 
