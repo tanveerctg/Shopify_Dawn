@@ -725,7 +725,7 @@ Shipping Bar
         <h2>{{ variant.id }}</h2><h2>{{ variant.metafields.description.details }}</h2>           
   {%- endfor -%}
 
-
+<h1>{{ window.Shopify.routes.root }}</h1>
 
 <!--   <script type="application/json"  id="productsMetafields">
     {
@@ -735,9 +735,7 @@ Shipping Bar
     }
   </script> -->
 <script>
-// jQuery.getJSON(window.Shopify.routes.root + 'products/red-rain-coat.js', function(product) {
-//   alert('The title of this product is ' + product.title);
-// } );
+
 
   // console.log("URL",{{ product.url }},"Handle",{{product.handle}})
 
