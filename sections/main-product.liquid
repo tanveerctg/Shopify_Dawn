@@ -754,8 +754,8 @@ Shipping Bar
        interval=setInterval(()=>{
          i=i+1
          if(filteredMetaFields[productId][i]){
-           console.log("hello")
-          document.getElementById(`${productId}`).querySelector('img').src= {{filteredMetaFields[productId][i] | product_img_url}}
+           console.log("hello",filteredMetaFields[productId][i] | product_img_url)
+          // document.getElementById(`${productId}`).querySelector('img').src= {{filteredMetaFields[productId][i] | product_img_url}}
          }else{
            i=0
          }
