@@ -88,7 +88,8 @@
   
 <h1>
   
-  
+    {% assign handle= product.handle%}
+  {{handle}}
 Shipping Bar
   {{ section.settings.Shipping_Bar }}
 </h1>
@@ -739,8 +740,7 @@ Shipping Bar
 // } );
 
   // console.log("URL",{{ product.url }},"Handle",{{product.handle}})
-  {% assign handle= product.handle%}
-  {{handle}}
+
   
 </script>
 <!--   <script>
