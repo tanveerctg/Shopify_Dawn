@@ -755,7 +755,7 @@ Shipping Bar
          i=i+1
          if(filteredMetaFields[productId][i]){
            console.log("hello")
-          document.getElementById(`${productId}`).querySelector('img').src= filteredMetaFields[productId][i]
+          document.getElementById(`${productId}`).querySelector('img').src= {{filteredMetaFields[productId][i] | product_img_url}}
          }else{
            i=0
          }
