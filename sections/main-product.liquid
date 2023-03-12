@@ -307,9 +307,8 @@ Shipping Bar
               {%- when 'related_products' -%}
               <h3>Related Products</h3>
               {% for product in product.metafields.custom.related_products.value %}
-                {% if product.available %}
-                  {{ product.url }}
-                  {{ product.images |json|join:',' }}
+                {% if product.available %}     
+                  {{ produc |json }}
                   <a href="{{ product.url }}" id="{{ product.id }}">
                   {{ product.featured_image | image_url: width: 200 | image_tag }}
                   </a>
@@ -730,7 +729,7 @@ Shipping Bar
   <script type="application/json"  id="productsMetafields">
     {
       {% for product in product.metafields.custom.related_products.value %}
-        "{{ product.id }}":"{{ product|join:','  }}" {% if forloop.last == true %}{% else %},{% endif %}   
+        "{{ product.id }}":"{{ product.media|join:','  }}" {% if forloop.last == true %}{% else %},{% endif %}   
       {% endfor %}
     }
   </script>
