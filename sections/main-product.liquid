@@ -730,9 +730,9 @@ Shipping Bar
   <script type="application/json"  id="productsMetafields">
     {
       {% for product in product.metafields.custom.related_products.value %}
-        "{{ product.id }}":"{{ product.images|join:','  }}" {% if forloop.last == true %}{% else %},{% endif %}   
+        "{{ product.id }}":"{{ product }}" {% if forloop.last == true %}{% else %},{% endif %}   
       {% endfor %}
-      }
+    }
   </script>
   <script>
       console.log(JSON.parse(document.getElementById("productsMetafields").textContent))
