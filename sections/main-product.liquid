@@ -737,15 +737,17 @@ Shipping Bar
   </script> -->
 <script>
  console.log("Root",window.Shopify.routes.root)
-
   // console.log("URL",{{ product.url }},"Handle",{{product.handle}})
-
   // fetch(`${window.Shopify.routes.root}{{product.handle}}'.json'`).then((res)=>{
   //   console.log({res})
   // })
-
-  
 </script>
+<script id="productHandle">
+  {{product.handle}}
+</script>
+                    <script>
+                      console.log(document.getElementById("productHandle").textContent)
+                    </script>
 <!--   <script>
     console.log(document.getElementById("productsMetafields").textContent)
 
