@@ -726,13 +726,13 @@ Shipping Bar
 
 
 
-  <script type="application/json"  id="productsMetafields">
+<!--   <script type="application/json"  id="productsMetafields">
     {
       {% for product in product.metafields.custom.related_products.value %}
         "{{ product.id }}":"{{ product.images|join:','  }}" {% if forloop.last == true %}{% else %},{% endif %}   
       {% endfor %}
     }
-  </script>
+  </script> -->
 <script>
 // jQuery.getJSON(window.Shopify.routes.root + 'products/red-rain-coat.js', function(product) {
 //   alert('The title of this product is ' + product.title);
@@ -741,7 +741,7 @@ Shipping Bar
   console.log("URL",{{ product.url }},"Handle",{{product.handle}})
   
 </script>
-  <script>
+<!--   <script>
     console.log(document.getElementById("productsMetafields").textContent)
 
     const metaFields=JSON.parse(document.getElementById("productsMetafields").textContent)
@@ -775,7 +775,7 @@ Shipping Bar
    })
     console.log("Meta Fields",metaFields)
     console.log("filteredMetaFields",filteredMetaFields)
-  </script>
+  </script> -->
   <script type="application/json" id="variantsInfo">
     {     
       {%- for variant in product.variants -%}      
