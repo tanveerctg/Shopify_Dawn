@@ -730,14 +730,13 @@ Shipping Bar
   <script  id="productsMetafields">
     
       {% for product in product.metafields.custom.related_products.value %}
-        {{ product.id }}:{{ product.images | json |join:','  }} _____
+        {{ product.id }}:{{ product.images|join:','  }}
       {% endfor %}
       
-    
   </script>
-                    <script>
-console.log(document.getElementById("productsMetafields").textContent.split("_____"))
-                    </script>
+  <script>
+      console.log(document.getElementById("productsMetafields").textContent)
+  </script>
 <!--   <script>
     console.log(document.getElementById("productsMetafields").textContent)
 
