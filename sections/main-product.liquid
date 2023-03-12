@@ -733,7 +733,14 @@ Shipping Bar
       {% endfor %}
     }
   </script>
+<script>
+// jQuery.getJSON(window.Shopify.routes.root + 'products/red-rain-coat.js', function(product) {
+//   alert('The title of this product is ' + product.title);
+// } );
 
+  console.log("URL",{{ product.url }},"Handle",{{product.handle}})
+  
+</script>
   <script>
     console.log(document.getElementById("productsMetafields").textContent)
 
