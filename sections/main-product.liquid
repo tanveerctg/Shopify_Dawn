@@ -741,6 +741,10 @@ Shipping Bar
 
   // console.log("URL",{{ product.url }},"Handle",{{product.handle}})
 
+  fetch(window.Shopify.routes.root + {{product.handle}}).then((res)=>{
+    console.log({res})
+  })
+
   
 </script>
 <!--   <script>
