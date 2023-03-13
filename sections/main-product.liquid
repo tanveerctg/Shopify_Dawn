@@ -750,7 +750,7 @@ Shipping Bar
 <script>
     console.log(JSON.parse(document.getElementById("productHandle").textContent))
     const productHandle=Object.values(JSON.parse(document.getElementById("productHandle").textContent))[0]
-    console.log({productHandle:productHandle[0]})
+    console.log({productHandle})
     fetch(`${window.Shopify.routes.root}${productHandle}.json`).then((res)=>{
       console.log({res})
     })
