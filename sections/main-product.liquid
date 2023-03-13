@@ -772,6 +772,7 @@ Shipping Bar
 <script>
     const metaFields=JSON.parse(document.getElementById("productsMetafields").textContent)
     const productIds=Object.keys(metaFields)
+    console.log({metaFields,productIds})
     productIds.forEach((productId)=>{
       console.log(document.getElementById(`${productId}`).querySelectorAll('img'))
     })
