@@ -312,7 +312,7 @@ Shipping Bar
                 {% if product.available %}     
                   <a href="{{ product.url }}" id="{{ product.id }}">
                    {% for image in product.images %}
-                     {% if forloop.last == true %}
+                     {% if forloop.first == true %}
                        {% assign className='active' %}
                      {% else %}
                        {% assign className='' %}
