@@ -749,6 +749,8 @@ Shipping Bar
 </script>
 <script>
     console.log(JSON.parse(document.getElementById("productHandle").textContent))
+    const productHandle=Object.values(JSON.parse(document.getElementById("productHandle").textContent))
+    console.log({productHandle})
 </script>
 <!--   <script>
     console.log(document.getElementById("productsMetafields").textContent)
