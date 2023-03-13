@@ -793,11 +793,12 @@ Shipping Bar
              i=0
            }
      
-         },500)
+         },700)
        })
        document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
          i=0
-         console.log(e.target.parentElement.parentElement)
+         document.getElementById(`${productId}`).querySelectorAll('div')[0].classList.remove("hideProduct")
+         document.getElementById(`${productId}`).querySelectorAll('div')[0].classList.add("activeProduct")
          clearInterval(interval)
        })
      })
