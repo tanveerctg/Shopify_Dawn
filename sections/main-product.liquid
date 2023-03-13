@@ -744,14 +744,14 @@ Shipping Bar
 </script>
 <script type="application/json" id="productHandle">
   {
-  "{{ product.id }}":"{{product.handle}}"
+  "{{ product.id }}":"{{product.url}}"
   }
 </script>
 <script>
     console.log(JSON.parse(document.getElementById("productHandle").textContent))
     const productHandle=Object.values(JSON.parse(document.getElementById("productHandle").textContent))[0]
     console.log({productHandle})
-    fetch(`products/adidas-kids-stan-smith.json`).then((res)=>{
+    fetch(`${window.Shopify.routes.root}${productHandle}.json`).then((res)=>{
       console.log({res})
     })
 </script>
