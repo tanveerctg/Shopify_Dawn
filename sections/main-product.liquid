@@ -782,8 +782,14 @@ Shipping Bar
          interval=setInterval(()=>{
            i=i+1
            const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
-           allChilds[3].classList.remove("hideProduct")
-           allChilds[3].classList.add("activeProduct")
+           allChilds.forEach(child=>{
+             child.classList.add("hideProduct")
+             child.classList?.add("activeProduct")
+           })
+           if(i<allChilds.length){
+             allChilds[i].classList.remove("hideProduct")
+             allChilds[i].classList.add("activeProduct")         
+           }
            console.log({allChilds})
            // if(filteredMetaFields[productId][i]){
            //   console.log("hello")
