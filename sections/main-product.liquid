@@ -798,13 +798,7 @@ Shipping Bar
        document.getElementById(`${productId}`).addEventListener('mouseleave',(e)=>{
          console.log(e.target)
          i=0
-         const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
-         allChilds.forEach(child=>{
-             child.classList.add("hideProduct")
-             child.classList?.remove("activeProduct")
-         })
-         document.getElementById(`${productId}`).querySelectorAll('div')[0].classList.remove("hideProduct")
-         document.getElementById(`${productId}`).querySelectorAll('div')[0].classList.add("activeProduct")
+         
          clearInterval(interval)
        })
      })
