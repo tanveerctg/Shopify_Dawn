@@ -756,38 +756,38 @@ Shipping Bar
 <script>
     console.log(document.getElementById("productsMetafields").textContent)
 
-  return
-    const metaFields=JSON.parse(document.getElementById("productsMetafields").textContent)
-    console.log({metaFields})
-    const filteredMetaFields={}
-    const productIds=Object.keys(metaFields)
 
-    productIds.forEach((productId)=>{
-      filteredMetaFields[productId]=metaFields[productId].split(',')
-    })
+   //  const metaFields=JSON.parse(document.getElementById("productsMetafields").textContent)
+   //  console.log({metaFields})
+   //  const filteredMetaFields={}
+   //  const productIds=Object.keys(metaFields)
+
+   //  productIds.forEach((productId)=>{
+   //    filteredMetaFields[productId]=metaFields[productId].split(',')
+   //  })
   
-   let i=0
-   let interval
-   productIds.forEach(productId=>{
-     document.getElementById(`${productId}`).addEventListener('mouseover',(e)=>{
-       console.log(e)
-       interval=setInterval(()=>{
-         i=i+1
-         if(filteredMetaFields[productId][i]){
-           console.log("hello")
-          document.getElementById(`${productId}`).querySelector('img').src= {{filteredMetaFields[productId][i] | product_img_url}}
-         }else{
-           i=0
-         }
-       },1000)
-     })
-     document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
-       i=0
-       clearInterval(interval)
-     })
-   })
-    console.log("Meta Fields",metaFields)
-    console.log("filteredMetaFields",filteredMetaFields)
+   // let i=0
+   // let interval
+   // productIds.forEach(productId=>{
+   //   document.getElementById(`${productId}`).addEventListener('mouseover',(e)=>{
+   //     console.log(e)
+   //     interval=setInterval(()=>{
+   //       i=i+1
+   //       if(filteredMetaFields[productId][i]){
+   //         console.log("hello")
+   //        document.getElementById(`${productId}`).querySelector('img').src= {{filteredMetaFields[productId][i] | product_img_url}}
+   //       }else{
+   //         i=0
+   //       }
+   //     },1000)
+   //   })
+   //   document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
+   //     i=0
+   //     clearInterval(interval)
+   //   })
+   // })
+   //  console.log("Meta Fields",metaFields)
+   //  console.log("filteredMetaFields",filteredMetaFields)
   </script>
   <script type="application/json" id="variantsInfo">
     {     
