@@ -780,7 +780,7 @@ Shipping Bar
        document.getElementById(`${productId}`).addEventListener('mouseover',(e)=>{
          console.log(e)
          interval=setInterval(()=>{
-           i=i+1
+         
            const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
            allChilds.forEach(child=>{
              child.classList.add("hideProduct")
@@ -792,7 +792,7 @@ Shipping Bar
            }else{
              i=0
            }
-     
+       i=i+1
          },700)
        })
        document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
