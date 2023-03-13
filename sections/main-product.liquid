@@ -752,7 +752,9 @@ Shipping Bar
     const productHandle=Object.values(JSON.parse(document.getElementById("productHandle").textContent))[0]
     console.log({productHandle})
     fetch(`${productHandle}.json`).then((res)=>{
-      console.log({res})
+      return res.body
+    }).then(res=>{
+      console.log(res)
     })
 </script>
 </script>
