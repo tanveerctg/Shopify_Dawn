@@ -797,11 +797,11 @@ Shipping Bar
        })
        document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
          i=0
-             const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
-           allChilds.forEach(child=>{
+         const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
+         allChilds.forEach(child=>{
              child.classList.add("hideProduct")
              child.classList?.remove("activeProduct")
-           })
+         })
          document.getElementById(`${productId}`).querySelectorAll('div')[0].classList.remove("hideProduct")
          document.getElementById(`${productId}`).querySelectorAll('div')[0].classList.add("activeProduct")
          clearInterval(interval)
