@@ -784,7 +784,7 @@ Shipping Bar
            const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
            allChilds.forEach(child=>{
              child.classList.add("hideProduct")
-             child.classList?.add("activeProduct")
+             child.classList?.remove("activeProduct")
            })
            if(i<allChilds.length){
              allChilds[i].classList.remove("hideProduct")
@@ -792,14 +792,8 @@ Shipping Bar
            }else{
              i=0
            }
-           console.log({allChilds})
-           // if(filteredMetaFields[productId][i]){
-           //   console.log("hello")
-           //  document.getElementById(`${productId}`).querySelector('img').src= {{filteredMetaFields[productId][i] | product_img_url}}
-           // }else{
-           //   i=0
-           // }
-         },1000)
+     
+         },500)
        })
        document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
          i=0
