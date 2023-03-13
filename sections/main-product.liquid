@@ -781,7 +781,7 @@ Shipping Bar
          console.log(e)
          interval=setInterval(()=>{
            i=i+1
-           const allChilds=document.getElementById(`${productId}>div`)
+           const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
            console.log({allChilds})
            // if(filteredMetaFields[productId][i]){
            //   console.log("hello")
