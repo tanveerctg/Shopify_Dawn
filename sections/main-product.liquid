@@ -317,6 +317,7 @@ Shipping Bar
                      {% else %}
                        {% assign className='hideProduct' %}
                      {% endif %}
+                     {{ image }}
                      <div class="{{ className }}">
                         {{ image | image_url: width: 200 | image_tag }}
                       </div>
@@ -780,7 +781,7 @@ Shipping Bar
        document.getElementById(`${productId}`).addEventListener('mouseover',(e)=>{
          console.log(e)
          interval=setInterval(()=>{
-          i=i+1
+           i=i+1
            const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
            allChilds.forEach(child=>{
              child.classList.add("hideProduct")
