@@ -313,9 +313,9 @@ Shipping Bar
                   <a href="{{ product.url }}" id="{{ product.id }}">
                    {% for image in product.images %}
                      {% if forloop.first == true %}
-                       {% assign className='active' %}
+                       {% assign className='activeProduct' %}
                      {% else %}
-                       {% assign className='' %}
+                       {% assign className='hideProduct' %}
                      {% endif %}
                      <div class="{{ className }}">
                         {{ image | image_url: width: 200 | image_tag }}
