@@ -798,12 +798,11 @@ Shipping Bar
              allChilds[i].classList.add("activeProduct")  
            }
       
-         },1000)
+         },300)
        })
        document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
          console.log(e.target)
          i=0
-      
          clearInterval(interval)
        })
      })
