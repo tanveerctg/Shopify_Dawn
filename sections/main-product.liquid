@@ -784,6 +784,7 @@ Shipping Bar
            i=i+1
            
            const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
+           
            allChilds.forEach(child=>{
              child.classList.add("hideProduct")
              child.classList?.remove("activeProduct")
@@ -798,7 +799,7 @@ Shipping Bar
            }
            console.log({allChilds,length:allChilds.length,i})
       
-         },500)
+         },1000)
        })
        document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
          console.log(e.target)
