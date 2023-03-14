@@ -802,10 +802,9 @@ Shipping Bar
          },1000)
        })
        document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
-         console.log(e.target)
+         console.log("Mouseout",e.target)
          i=0
-         document.getElementById(`${productId}`).querySelectorAll('div')[i].classList.remove("hideProduct")
-         document.getElementById(`${productId}`).querySelectorAll('div')[i].classList.add("activeProduct")  
+ 
          clearInterval(interval)
        })
      })
