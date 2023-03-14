@@ -785,17 +785,29 @@ Shipping Bar
            
            const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
            console.log({allChilds,length:allChilds.length,i})
-           allChilds.forEach(child=>{
-             child.classList.add("hideProduct")
-             child.classList?.remove("activeProduct")
-           })
-           if(allChilds[i]){
-             allChilds[i].classList.remove("hideProduct")
-             allChilds[i].classList.add("activeProduct")         
-           }else{
+           // allChilds.forEach(child=>{
+           //   child.classList.add("hideProduct")
+           //   child.classList?.remove("activeProduct")
+           // })
+
+           //if there is no child for i then set i to 0
+           if(!allChilds[i]){
              i=0
              allChilds[i].classList.remove("hideProduct")
              allChilds[i].classList.add("activeProduct")  
+             return
+           }
+
+           //hide previous active item
+           if(allChilds[i-1]){
+             allChilds[i-1].classList.add("hideProduct")
+             allChilds[i-1].classList.remove("activeProduct")  
+           }
+
+           //show current active item
+           if(allChilds[i]){
+             allChilds[i].classList.remove("hideProduct")
+             allChilds[i].classList.add("activeProduct")         
            }
       
          },300)
