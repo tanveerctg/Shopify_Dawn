@@ -789,11 +789,6 @@ Shipping Bar
              child.classList.add("hideProduct")
              child.classList?.remove("activeProduct")
            })
-           //previous active item
-           const prevItem=allChilds.find(child=>child.classList.includes('activeProduct'))
-           console.log({prevItem})
-           
-           
            if(allChilds[i]){
              allChilds[i].classList.remove("hideProduct")
              allChilds[i].classList.add("activeProduct")         
@@ -803,7 +798,7 @@ Shipping Bar
              allChilds[i].classList.add("activeProduct")  
            }
       
-         },800)
+         },300)
        })
        document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
          console.log(e.target)
