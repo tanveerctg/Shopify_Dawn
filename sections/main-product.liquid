@@ -784,7 +784,6 @@ Shipping Bar
            i=i+1
            
            const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
-           console.log({allChilds,length:allChilds.length,i})
            allChilds.forEach(child=>{
              child.classList.add("hideProduct")
              child.classList?.remove("activeProduct")
@@ -797,6 +796,7 @@ Shipping Bar
              allChilds[i].classList.remove("hideProduct")
              allChilds[i].classList.add("activeProduct")  
            }
+           console.log({allChilds,length:allChilds.length,i})
       
          },500)
        })
