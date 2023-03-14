@@ -789,6 +789,8 @@ Shipping Bar
              child.classList.add("hideProduct")
              child.classList?.remove("activeProduct")
            })
+           //previous active item
+           const prevItem=allChilds.find(child=>child.classList.includes('activeProduct'))
            
            
            if(allChilds[i]){
