@@ -785,10 +785,10 @@ Shipping Bar
            
            const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
            console.log({allChilds,length:allChilds.length,i})
-           // allChilds.forEach(child=>{
-           //   child.classList.add("hideProduct")
-           //   child.classList?.remove("activeProduct")
-           // })
+           allChilds.forEach(child=>{
+             child.classList.add("hideProduct")
+             child.classList?.remove("activeProduct")
+           })
 
            //if there is no child for i then set i to 0
            if(!allChilds[i]){
