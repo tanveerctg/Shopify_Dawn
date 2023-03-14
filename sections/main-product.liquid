@@ -794,15 +794,15 @@ Shipping Bar
              allChilds[i].classList.add("activeProduct")         
            }else{
              i=0
-             allChilds[i].classList.remove("hideProduct")
-             allChilds[i].classList.add("activeProduct")  
+             
            }
       
-         },300)
+         },1000)
        })
        document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
          console.log(e.target)
          i=0
+      
          clearInterval(interval)
        })
      })
