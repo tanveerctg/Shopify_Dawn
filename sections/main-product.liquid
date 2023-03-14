@@ -782,7 +782,9 @@ Shipping Bar
          console.log(e)
          interval=setInterval(()=>{
            i=i+1
+           
            const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
+           console.log({allChilds,length:allChilds.length,i})
            allChilds.forEach(child=>{
              child.classList.add("hideProduct")
              child.classList?.remove("activeProduct")
