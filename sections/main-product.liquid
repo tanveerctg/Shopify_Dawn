@@ -801,9 +801,9 @@ Shipping Bar
       
          },1000)
        })
-       document.getElementById(`${productId}`).addEventListener('mouseout',(e)=>{
+       document.getElementById(`${productId}`).addEventListener('mouseleave',(e)=>{
          console.log("Mouseout",e.target)
-         // i=0
+         i=0
  
         clearInterval(interval)
        })
