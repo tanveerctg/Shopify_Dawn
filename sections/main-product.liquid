@@ -803,6 +803,12 @@ Shipping Bar
        })
        document.getElementById(`${productId}`).addEventListener('mouseleave',(e)=>{
           console.log("Mouseout",e.target)
+               const allChilds=document.getElementById(`${productId}`).querySelectorAll('div')
+           
+           allChilds.forEach(child=>{
+             child.classList.add("hideProduct")
+             child.classList?.remove("activeProduct")
+           })
           i=0
           document.getElementById(`${productId}`).querySelectorAll('div')[i].classList.remove("hideProduct")
           document.getElementById(`${productId}`).querySelectorAll('div')[i].classList.add("activeProduct")
