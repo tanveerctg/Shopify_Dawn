@@ -776,10 +776,10 @@ Shipping Bar
     console.log({metaFields,productIds})
 
     let i=0
+         let interval
     productIds.forEach(productId=>{
        document.getElementById(`${productId}`).addEventListener('mouseenter',(e)=>{
        
-         let interval
          interval=setInterval(()=>{
            i=i+1
            
