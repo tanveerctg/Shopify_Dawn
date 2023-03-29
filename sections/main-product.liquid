@@ -744,6 +744,11 @@ Shipping Bar
   }
 </style>
 
+  <script>
+    const variants={{product.variants|json}}
+    console.log({variants})
+  </script>
+                          
   <script type="application/json"  id="productsMetafields">
     {
       {% for product in product.metafields.custom.related_products.value %}
