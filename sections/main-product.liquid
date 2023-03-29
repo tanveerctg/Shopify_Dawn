@@ -328,7 +328,15 @@ Shipping Bar
 
               {%- when 'inventory_quantity' -%}
               {% unless block.settings.should_inventory_quantity_show == blank %}
-                <p style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;"><span class="variantInventoryQuantity">{{ product.selected_or_first_available_variant.inventory_quantity }}</span> products left</p>
+                <p style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;"><span class="variantInventoryQuantity">
+
+                {% if product.selected_or_first_available_variant.inventory_quantity>0 -%}
+                  Ready To Ship
+                {%- else -%}
+                  Available For Purchase
+                {%- endif %}
+                {{ product.selected_or_first_available_variant.inventory_quantity }}
+                </span> products left</p>
               {% endunless %}
            
                 
