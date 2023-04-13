@@ -246,7 +246,7 @@
         "image-with-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.meta_obj.value.image.value }}",
+        "image": "{{ product.metafields.custom.artist_2.value.image.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
