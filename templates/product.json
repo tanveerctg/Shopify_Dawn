@@ -246,7 +246,8 @@
         "image-with-text-1"
       ],
       "settings": {
-        "height": "small",
+        "image": "{{ product.metafields.custom.meta_obj.value.image.value }}",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
