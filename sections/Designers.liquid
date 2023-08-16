@@ -1,6 +1,6 @@
 {% for artist in shop.metaobjects.artist.values %}
   {{ artist.name.value }}
-  <img src="{{ artist.image | asset_url }}" alt="image description">
+  <img src="{{ artist.image.value | asset_url }}" alt="image description">
 {% endfor %}
 
 
