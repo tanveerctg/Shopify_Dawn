@@ -396,6 +396,24 @@
       ],
       "settings": {
       }
+    },
+    "6e6de100-cee2-4761-8080-40584d2149f7": {
+      "type": "specs",
+      "blocks": {
+        "46bea919-4f4f-4f6a-adcc-1e43760f6ff7": {
+          "type": "specs-section",
+          "repeater": "{{ product.metafields.custom.specs.value }}",
+          "settings": {
+            "name": "{{ block.repeater.name.value }}",
+            "value": "{{ block.repeater.value.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "46bea919-4f4f-4f6a-adcc-1e43760f6ff7"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -405,6 +423,7 @@
     "multicolumn",
     "product-recommendations",
     "4109b3bb-8157-480f-ba8f-3622a174f2b6",
-    "adae2579-a264-4094-8189-cf3d71b57121"
+    "adae2579-a264-4094-8189-cf3d71b57121",
+    "6e6de100-cee2-4761-8080-40584d2149f7"
   ]
 }
