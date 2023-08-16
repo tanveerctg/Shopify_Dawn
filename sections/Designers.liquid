@@ -1,6 +1,7 @@
 {% for artist in shop.metaobjects.artist.values %}
   {{ artist.name.value }}
-  {{  artist.image.value| img_url: 'master' | img_tag }}
+
+  {{  artist.image.value| img_url: '100x100' | img_tag }}
 {% endfor %}
 
 
