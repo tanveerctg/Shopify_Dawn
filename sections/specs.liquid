@@ -1,8 +1,34 @@
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'specs' %}
+      <div class="sec" {{ block.shopify_attributes }}>
+        {{ block.settings.name }}----- {{ block.settings.value }}
+      </div>
+  {% endcase %}
+{% endfor %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Specs",
+  "blocks": [
+     {
+       "name": "specs",
+       "type": "text",
+       "settings": [
+         {
+           "type": "text",
+           "id": "name",
+           "label": "Name"
+         },
+         {
+           "type": "text",
+           "id": "value",
+           "label": "Value"
+         }
+       ]
+     }
+   ]
+}
 {% endschema %}
 
 {% stylesheet %}
