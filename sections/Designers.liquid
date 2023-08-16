@@ -1,6 +1,12 @@
+{% for artist in shop.metaobjects.artist.values %}
+  {{ artist.name.value }}
+{% endfor %}
+
+
+
 {% schema %}
   {
-    "name": "Section name",
+    "name": "Designers",
     "settings": []
   }
 {% endschema %}
