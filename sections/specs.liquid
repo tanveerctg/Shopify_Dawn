@@ -1,7 +1,7 @@
 {% for block in section.blocks %}
   Hello
   {% case block.type %}
-    {% when 'specs' %}
+    {% when 'specs-section' %}
       <div class="sec" {{ block.shopify_attributes }}>
         {{ block.settings.name }}----- {{ block.settings.value }}
       </div>
@@ -14,7 +14,7 @@
   "blocks": [
      {
        "name": "specs",
-       "type": "text",
+       "type": "specs-section",
        "settings": [
          {
            "type": "text",
