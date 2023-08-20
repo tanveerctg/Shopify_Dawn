@@ -14,6 +14,7 @@
         },
         "51f861bd-b6ff-433a-914a-39a3a3f0df89": {
           "type": "sku",
+          "disabled": true,
           "settings": {
           }
         },
