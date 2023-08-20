@@ -779,7 +779,7 @@ class VariantSelects extends HTMLElement {
        document.querySelector(`.EU`).classList?.remove("hideee")   
       document.querySelector(`.US`).classList.add("hideee") 
     }
-    document.querySelector('.skuContainer').innerHTML=`<h1>${this.currentVariant.sku}</h1>`
+    document.querySelector('.skuContainer').innerHTML=`<h1>SKU: ${this.currentVariant.sku}</h1>`
 
     productVariant.textContent="Product Variant "+allVariants[this.currentVariant.id].description
     variantInventory.textContent=allVariants[this.currentVariant.id].inventory_quantity
