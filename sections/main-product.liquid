@@ -280,11 +280,7 @@ Shipping Bar
               {% assign isAffiliate = false %}
           {% endif %}
         {% endfor %}
-        <div class='skuContainer'>
-          {% if product.selected_or_first_available_variant.sku %}
-            <h1>SKU: {{ product.selected_or_first_available_variant.sku }}</h1>
-          {% endif %}
-        </div>
+     
         
         {%- for block in section.blocks -%}
 
@@ -310,7 +306,12 @@ Shipping Bar
               <div style="background:{{ block.settings.bg_color }};color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;">
                  {{ block.settings.shiping_content  }}
               </div>
-
+              {%- when 'sku' -%}
+              <div class='skuContainer'>
+                  {% if product.selected_or_first_available_variant.sku %}
+                    <h1>SKU: {{ product.selected_or_first_available_variant.sku }}</h1>
+                  {% endif %}
+              </div>
               {%- when 'related_products' -%}
               <h3>Related Products</h3>
               {% for product in product.metafields.custom.related_products.value %}
