@@ -280,7 +280,10 @@ Shipping Bar
               {% assign isAffiliate = false %}
           {% endif %}
         {% endfor %}
-<h1>Hellloooo</h1>
+        {% if product.selected_or_first_available_variant.sku %}
+          <h1>SKU: {{ product.selected_or_first_available_variant.sku }}</h1>
+        {% endif %}
+        
         {%- for block in section.blocks -%}
 
           {% if isAffiliate %}
