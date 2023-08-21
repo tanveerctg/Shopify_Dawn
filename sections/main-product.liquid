@@ -832,7 +832,7 @@ Shipping Bar
     {
         "description":"{{ product.description }}",
         "full_des":"{{ product.description | slice: 0,product.description.size }}",
-        "short_des":{{ product.description| slice: 0,100 }}
+        "short_des":"{{ product.description| slice: 0,100 }}"
     }
   </script>
                           
@@ -929,7 +929,7 @@ Shipping Bar
     document.allVariants=document.getElementById("variantsInfo").textContent
     console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.allVariants))
 
-    const productsInfo=JSON.parse(document.getElementById("productsInfo"));
+    const productsInfo=JSON.parse(document.getElementById("productsInfo").textContent);
     console.log({productsInfo})
 
   </script>
