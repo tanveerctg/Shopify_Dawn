@@ -936,7 +936,8 @@ Shipping Bar
     const product_show_less_btn=document.querySelector('.product_show_less_btn')
 
      product_show_more_btn.addEventListener('click',()=>{
-       product__description.innerText=productDescription
+       console.log("click")
+       product__description.textContent=productDescription
      })
      product_show_less_btn.addEventListener('click',()=>{
        product__description.innerText=short_des
