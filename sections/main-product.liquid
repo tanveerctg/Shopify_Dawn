@@ -933,10 +933,12 @@ Shipping Bar
     const product__description=document.querySelector('.product__description')
     const product_show_more_btn=document.querySelector('.product_show_more_btn')
     const product_show_less_btn=document.querySelector('.product_show_less_btn')
-
+     
      product_show_more_btn.addEventListener('click',()=>{
        console.log("click")
        product__description.textContent=productDescription
+       product_show_more_btn.classList.add('hideProduct')
+       product_show_more_btn.classList.remove('activeProduct')
      })
      product_show_less_btn.addEventListener('click',()=>{
        product__description.innerText=short_des
