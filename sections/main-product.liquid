@@ -927,8 +927,22 @@ Shipping Bar
     document.allVariants=document.getElementById("variantsInfo").textContent
     console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.allVariants))
 
-    const productsInfo={{ product.description | strip_html| json }}
-    console.log({productsInfo})
+    const productDescription={{ product.description | strip_html| json }}
+    const short_des=productDescription.slice(0,100)
+
+    console.log({des_size,short_des})
+   
+    const product__description=document.querySelector('.product__description')
+    const product_show_more_btn=document.querySelector('.product_show_more_btn')
+    const product_show_less_btn=document.querySelector('.product_show_less_btn')
+
+     product_show_more_btn.addEventListener('click',()=>{
+       product__description.innerText=productDescription
+     })
+     product_show_less_btn.addEventListener('click',()=>{
+       product__description.innerText=short_des
+     })
+    console.log({productDescription})
 
   </script>
 
