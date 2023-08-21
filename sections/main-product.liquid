@@ -385,10 +385,13 @@ Shipping Bar
                 </div>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden">
+                  <!-- <div class="product__description rte quick-add-hidden">
                     {{ product.description }}
                   </div>
-                  <button class="product_show_more">Show More</button>
+                  <button class="product_show_more">Show More</button> -->
+
+           
+        
                 {%- endif -%}
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
