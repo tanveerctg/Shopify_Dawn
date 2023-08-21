@@ -391,12 +391,14 @@ Shipping Bar
                   <button class="product_show_more">Show More</button> -->
 
                     {% assign p_description = product.description %}
-                    
-                    {% if p_description.size > 100 %}
-                      {{ p_description | slice: 0,100 }}
-                    {% else %}
-                      {{ p_description  }}
-                    {% endif %}
+
+                    <div class="product__description">
+                      {% if p_description.size > 100 %}
+                        {{ p_description | slice: 0,100 }}
+                      {% else %}
+                        {{ p_description  }}
+                      {% endif %}
+                    </div>
                     
                     
                     
