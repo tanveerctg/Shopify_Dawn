@@ -927,7 +927,7 @@ Shipping Bar
     document.allVariants=document.getElementById("variantsInfo").textContent
     console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.allVariants))
 
-    const productsInfo="{{ product.description | strip_html| json }}"
+    const productsInfo=`{{ product.description | strip_html| json }}`
     console.log({productsInfo})
 
   </script>
