@@ -830,7 +830,7 @@ Shipping Bar
   </script>
   <script type="application/json"  id="productsInfo">
     {
-        "description":"asd"
+        "description":{{ product.description | strip_html | json }}
     }
   </script>
                           
