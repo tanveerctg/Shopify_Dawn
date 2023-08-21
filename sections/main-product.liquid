@@ -921,11 +921,10 @@ Shipping Bar
     document.allVariants=document.getElementById("variantsInfo").textContent
     console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.allVariants))
     const des_size={{product.description.size}}
-    const full_des='{{product.description| slice: 0,des_size}}'
-    const short_des='{{product.description| slice: 0,100}}'
+
 
    
-    console.log("HELLLO",des_size,full_des,short_des)
+    console.log("HELLLO",des_size)
 
   </script>
 
