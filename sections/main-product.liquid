@@ -828,6 +828,14 @@ Shipping Bar
       {% endfor %}
     }
   </script>
+  <script type="application/json"  id="productsInfo">
+    {
+        "description":"{{ product.description }}",
+        "full_des":"{{ product.description | slice: 0,product.description.size }}",
+        "short_des":{{ product.description| slice: 0,100 }}
+    }
+  </script>
+                          
 
 <!-- <script type="application/json" id="productHandle">
   {
