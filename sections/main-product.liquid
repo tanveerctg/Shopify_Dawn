@@ -942,6 +942,8 @@ Shipping Bar
      })
      product_show_less_btn.addEventListener('click',()=>{
        product__description.innerText=short_des
+       product_show_less_btn.classList.add('hideProduct')
+       product_show_less_btn.classList.remove('activeProduct')
      })
     console.log({productDescription})
 
