@@ -801,6 +801,31 @@ Shipping Bar
   <script>
     const variants={{product.variants|json}}
     console.log({variants})
+
+       {% assign p_description = product.description %}
+
+                    <div class="product__description">
+                      {% if p_description.size > 100 %}
+                        {{ p_description | slice: 0,100 }}
+                      {% else %}
+                        {{ p_description  }}
+                      {% endif %}
+                    </div>
+                    
+                    
+                    
+                    {% if p_description.size >100 %}
+                       <button class="product_show_more_btn">Show More</button>
+                    {% else %}
+                     <button class="product_show_less_btn">Show Less</button>
+                    {% endif %}
+   const des_size={{product.description.size}}
+   const full_des={{product.description| slice: 0,des_size}}
+   const product__description=document.querySelector('.product__description')
+   const product_show_more_btn=document.querySelector('.product_show_more_btn')
+   const product_show_less_btn=document.querySelector('.product_show_less_btn')
+
+    
   </script>
                           
   <script type="application/json"  id="productsMetafields">
