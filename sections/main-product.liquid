@@ -390,7 +390,21 @@ Shipping Bar
                   </div>
                   <button class="product_show_more">Show More</button> -->
 
-           
+                    {% assign p_description = product.description %}
+                    
+                    {% if p_description.size > 100 %}
+                      {{ p_description | slice: 0,100 }}
+                    {% else %}
+                      {{ p_description  }}
+                    {% endif %}
+                    
+                    
+                    
+                    {% if p_description.size >100 %}
+                       <button class="product_show_more_btn">Show More</button>
+                    {% else %}
+                     <button class="product_show_less_btn">Show Less</button>
+                    {% endif %}
         
                 {%- endif -%}
               {%- when 'custom_liquid' -%}
