@@ -336,14 +336,7 @@ Shipping Bar
               {% unless block.settings.should_inventory_quantity_show == blank %}
                 <p style="color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;">
                 <span class="variantInventoryQuantity">
-
-                {% if product.selected_or_first_available_variant.inventory_quantity>0 -%}
-                  Ready To Ship
-                {%- else -%}
-                  Available For Purchase
-                {%- endif %}
-                 <hr/>
-               
+  {{ product.selected_or_first_available_variant.inventory_quantity }}
                 </span> products left
                 </p>
                 
