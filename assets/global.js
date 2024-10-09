@@ -878,6 +878,8 @@ class VariantSelects extends HTMLElement {
 
         if (price) price.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+      }).catch(err=>{
+         console.log("ERR",err)
       });
   }
 
