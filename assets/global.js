@@ -875,8 +875,10 @@ class VariantSelects extends HTMLElement {
         if (source && destination) destination.innerHTML = source.innerHTML;
 
         const price = document.getElementById(`price-${this.dataset.section}`);
-        document.getElementById(`price-${this.dataset.section}`).innerHTML=html.getElementById(`sku-${this.dataset.section}`).innerHTML;
+        const sku=document.getElementById(`price-${this.dataset.section}`);
+        // document.getElementById(`price-${this.dataset.section}`).innerHTML=html.getElementById(`sku-${this.dataset.section}`).innerHTML;
         if (price) price.classList.remove('visibility-hidden');
+        if(sku) sku.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
       }).catch(err=>{
          console.log("ERR",err)
