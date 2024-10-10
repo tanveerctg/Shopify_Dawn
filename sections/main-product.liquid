@@ -307,9 +307,11 @@ Shipping Bar
                  {{ block.settings.shiping_content  }}
               </div>
               {%- when 'sku' -%}
-                <!-- <div class="no-js-hidden" id="sku-{{ section.id }}" {{ block.shopify_attributes }}>
-                  {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-                </div> -->
+                <div class="no-js-hidden" id="sku-{{ section.id }}" {{ block.shopify_attributes }}>
+                  {% if product.selected_or_first_available_variant.sku %}
+                    <h1>SKU: {{ product.selected_or_first_available_variant.sku }}</h1>
+                  {% endif %}
+                </div>
               <div class='skuContainer'>
                 {{ section.id }}
                   {% if product.selected_or_first_available_variant.sku %}
