@@ -879,7 +879,7 @@ class VariantSelects extends HTMLElement {
         if (sourceSKU && detinationSKU) detinationSKU.innerHTML = sourceSKU.innerHTML;
         
         const price = document.getElementById(`price-${this.dataset.section}`);
-        const sku=document.getElementById(`price-${this.dataset.section}`);
+        const sku=document.getElementById(`sku-${this.dataset.section}`);
         
         if (price) price.classList.remove('visibility-hidden');
         if(sku) sku.classList.remove('visibility-hidden');
