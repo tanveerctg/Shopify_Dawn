@@ -312,11 +312,11 @@ Shipping Bar
                     <h1>TOR MATHA SKU: {{ product.selected_or_first_available_variant.sku }}</h1>
                   {% endif %}
                 </div>
-              <!-- <div class='skuContainer'>
+              <div class='skuContainer'>
                   {% if product.selected_or_first_available_variant.sku %}
                     <h1>SKU: {{ product.selected_or_first_available_variant.sku }}</h1>
                   {% endif %}
-              </div> -->
+              </div>
               {%- when 'related_products' -%}
               <h3>Related Products</h3>
               {% for product in product.metafields.custom.related_products.value %}
