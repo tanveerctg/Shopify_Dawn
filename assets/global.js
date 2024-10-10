@@ -872,8 +872,12 @@ class VariantSelects extends HTMLElement {
         console.log({html,sectionId:this.dataset.section,sku:html.getElementById(`sku-${this.dataset.section}`).textContent})
         const destination = document.getElementById(`price-${this.dataset.section}`);
         const source = html.getElementById(`price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+        const detinationSKU= document.getElementById(`price-${this.dataset.section}`);
+        const sourceSKU = html.getElementById(`sku-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+        // document.getElementById(`price-${this.dataset.section}`).innerHTML=html.getElementById(`sku-${this.dataset.section}`).innerHTML;
         if (source && destination) destination.innerHTML = source.innerHTML;
-
+        if (sourceSKU && detinationSKU) detinationSKU.innerHTML = sourceSKU.innerHTML;
+        
         const price = document.getElementById(`price-${this.dataset.section}`);
         const sku=document.getElementById(`price-${this.dataset.section}`);
         
