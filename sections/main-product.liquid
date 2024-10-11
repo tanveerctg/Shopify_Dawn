@@ -938,7 +938,7 @@ Shipping Bar
   <script>
     document.allVariants=document.getElementById("variantsInfo").textContent
     console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.allVariants))
-
+    console.log("MUNJEER",JSON.parse(document.getElementById('variantsInfo1').textContent)
     const productDescription={{ product.description | strip_html| json }}
     const short_des=productDescription.slice(0,100)
 
