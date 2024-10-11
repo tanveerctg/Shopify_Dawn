@@ -927,6 +927,14 @@ Shipping Bar
     }
 
   </script>
+  <script type="application/json" id="variantsInfo1">
+    {     
+      {%- for variant in product.variants -%}      
+            "{{ variant.id }}":variant{% if forloop.last == true %}{% else %},{% endif %}     
+      {%- endfor -%}
+    }
+
+  </script>
   <script>
     document.allVariants=document.getElementById("variantsInfo").textContent
     console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.allVariants))
