@@ -930,7 +930,7 @@ Shipping Bar
   <script type="application/json" id="variantsInfo1">
     {     
       {%- for variant in product.variants -%}      
-            "{{ variant.id }}":{{ variant.sku | string }} {% if forloop.last == true %}{% else %},{% endif %}     
+            "{{ variant.id }}":{{ variant.sku|string }} {% if forloop.last == true %}{% else %},{% endif %}     
       {%- endfor -%}
     }
 
