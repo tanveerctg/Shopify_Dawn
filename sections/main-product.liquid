@@ -835,7 +835,7 @@ Shipping Bar
   </script>
   <script type="application/json"  id="productsInfo">
     {
-        "description":{{ product.description | strip_html| json }}
+        "description":{{ product.description | strip_html | json }}
     }
   </script>
                           
@@ -938,6 +938,7 @@ Shipping Bar
   </script>
   <script>
     document.allVariants=document.getElementById("variantsInfo").textContent
+    console.log("variantsInfo",document.allVariants)
     console.log("document.getElementById('variantsInfo').textContent",JSON.parse(document.allVariants))
     console.log("MUNJEER",JSON.parse(document.getElementById('variantsInfo1').textContent))
     const productDescription={{ product.description | strip_html| json }}
