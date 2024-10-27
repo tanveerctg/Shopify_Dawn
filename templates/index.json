@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16619623154733b98b": {
@@ -24,7 +33,7 @@
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "Shop Now",
-            "button_link_2": "shopify:\/\/products\/galaxy-box",
+            "button_link_2": "shopify://products/galaxy-box",
             "button_style_secondary_2": false
           }
         }
@@ -35,7 +44,7 @@
         "1661962315088c926b-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/homepage_slider.jpg",
+        "image": "shopify://shop_images/homepage_slider.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
@@ -61,7 +70,7 @@
         "1661962708f82302e4-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
         },
@@ -88,7 +97,7 @@
         "461d8c6c-0e5b-442e-b47d-d4abd42fa86d"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/homepage_1.jpg",
+        "image": "shopify://shop_images/homepage_1.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -114,7 +123,7 @@
         "16619628460598d699-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
         },
@@ -141,7 +150,7 @@
         "6578ac07-3ebc-4adc-b27f-3b5dda5cc7a2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/homepage_2.jpg",
+        "image": "shopify://shop_images/homepage_2.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -162,7 +171,7 @@
           "settings": {
             "name": "karim",
             "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-            "client_img": "shopify:\/\/shop_images\/model.png"
+            "client_img": "shopify://shop_images/model.png"
           }
         },
         "6907ca99-3fb9-4e46-a5a7-762e3f7da42c": {
@@ -170,7 +179,7 @@
           "settings": {
             "name": "aasd",
             "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-            "client_img": "shopify:\/\/shop_images\/model.png"
+            "client_img": "shopify://shop_images/model.png"
           }
         },
         "f396627c-fbcb-4485-af86-4303925f5178": {
@@ -178,7 +187,7 @@
           "settings": {
             "name": "rahim",
             "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-            "client_img": "shopify:\/\/shop_images\/model.png"
+            "client_img": "shopify://shop_images/model.png"
           }
         },
         "fccd8346-68bd-4c95-8d4e-8fb63c41a292": {
@@ -186,7 +195,7 @@
           "settings": {
             "name": "Sterling",
             "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-            "client_img": "shopify:\/\/shop_images\/stylish-man-in-bow-tie.jpg"
+            "client_img": "shopify://shop_images/stylish-man-in-bow-tie.jpg"
           }
         },
         "265d756f-3d51-476c-8d56-9b5efa7d918d": {
@@ -194,7 +203,7 @@
           "settings": {
             "name": "asd",
             "comment": "asd",
-            "client_img": "shopify:\/\/shop_images\/model.png"
+            "client_img": "shopify://shop_images/model.png"
           }
         }
       },
@@ -212,12 +221,12 @@
       "type": "apps",
       "blocks": {
         "74782814-272a-499d-909f-920545066e8d": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/verified_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/verified_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
         "dc5189de-e35b-45d9-91be-d7a30dfe320d": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
