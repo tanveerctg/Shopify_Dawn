@@ -15,16 +15,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "judgeme_carousel_section_4myMkt": {
-      "type": "judgeme_carousel_section",
-      "settings": {
-        "maxwidth": 1080
-      }
     }
   },
   "order": [
-    "main",
-    "judgeme_carousel_section_4myMkt"
+    "main"
   ]
 }
