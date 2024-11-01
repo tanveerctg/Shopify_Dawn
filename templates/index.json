@@ -289,10 +289,19 @@
             "vertical_position": 45,
             "horizontal_position": 45
           }
+        },
+        "product_pDbG8p": {
+          "type": "product",
+          "settings": {
+            "product": "asics-tiger-gel-lyte-v-30-years-of-gel-pack",
+            "vertical_position": 81,
+            "horizontal_position": 27
+          }
         }
       },
       "block_order": [
-        "product_GK7KUA"
+        "product_GK7KUA",
+        "product_pDbG8p"
       ],
       "settings": {
         "image": "shopify://shop_images/Screenshot_54.png",
