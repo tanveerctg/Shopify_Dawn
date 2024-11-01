@@ -317,27 +317,6 @@
         "image_ratio": "16_9",
         "image_size": "cover"
       }
-    },
-    "sell_multiple_liquid_FKDrLN": {
-      "type": "sell_multiple_liquid",
-      "blocks": {
-        "product_bdm8LG": {
-          "type": "product",
-          "settings": {
-            "product": "adidas-classic-backpack-legend-ink-multicolour",
-            "vertical_position": 10,
-            "horizontal_position": 10
-          }
-        }
-      },
-      "block_order": [
-        "product_bdm8LG"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/044f848776141f1024eae6c610a28d12.jpg",
-        "image_ratio": "16_9",
-        "image_size": "cover"
-      }
     }
   },
   "order": [
@@ -347,7 +326,6 @@
     "dcc36258-a980-4e64-a360-64e93d5a07dd",
     "16639964221eaf5659",
     "0002c2cc-0592-4b24-91a7-3be868297576",
-    "sell_multiple_liquid_Fii4TE",
-    "sell_multiple_liquid_FKDrLN"
+    "sell_multiple_liquid_Fii4TE"
   ]
 }
