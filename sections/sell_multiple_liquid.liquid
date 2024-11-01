@@ -178,7 +178,7 @@
       </h4>
     {% endif %}
   
-    <div class="product-grid">
+    <div class="product-grid-{{ section.id }}">
           <img class="selected-product-image" src="">
 
           <a href="" target="_blank" class="selected-product-url button">View Product</a>
@@ -214,7 +214,7 @@
     productGrid.style.display = "none";
   }
   
-  function updateSelectedProduct(url, image) {
+  function updateSelectedProduct(url, image,sectionId) {
     selectedProductUrl.href = url;
     selectedProductImage.src = image;
   }
