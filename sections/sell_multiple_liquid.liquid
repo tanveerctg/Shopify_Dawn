@@ -175,12 +175,12 @@
        Show Placeholder Item Image
       </h4>
     {% endif %}
-    {% if isBlockItemsExist  %}
-      <div class="product-grid">
-          <img class="selected-product-image" src="" />
+  
+    <div class="product-grid">
+          <img class="selected-product-image" src=" {{ 'collection-1' |placeholder_svg_tag:'container-img'}}" />
           <a href="" target="_blank" class="selected-product-url button">View Product</a>
-      </div>
-    {% endif %}
+    </div>
+
 </div>
 
 <script>
