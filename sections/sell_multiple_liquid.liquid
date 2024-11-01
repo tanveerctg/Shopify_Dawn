@@ -216,8 +216,8 @@
   
   function updateSelectedProduct(url, image,sectionId) {
     console.log({selectedProductImage,selectedProductUrl})
-    selectedProductUrl.href = url;
-    selectedProductImage.src = image;
+    document.querySelector(".selected-product-image-{{ sectionId }}").href = url;
+    document.querySelector(".selected-product-url-{{ sectionId }}").src = image;
   }
   
   // Controller Functions
