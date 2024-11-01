@@ -193,9 +193,9 @@
     // Model Functions
   // const products = []; // This will hold product data if needed
   
-  function addProduct(url, image) {
-    products.push({ url, image });
-  }
+  // function addProduct(url, image) {
+  //   products.push({ url, image });
+  // }
   
   // View Functions
   const productGrid = document.querySelector(".product-grid");
@@ -227,7 +227,7 @@
         const dataImage = product.getAttribute("data-image");
          console.log({dataUrl,dataImage})
         // Add product to the list (if needed)
-        addProduct(dataUrl, dataImage);
+        // addProduct(dataUrl, dataImage);
         
         // Update the view with selected product
         displayProductGrid();
