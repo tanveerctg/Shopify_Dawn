@@ -222,7 +222,7 @@
   
   // Controller Functions
   function initialize() {
-    hideProductGrid();
+    hideProductGrid({{section.id}});
     
     const productsElements = document.querySelectorAll(".product-link");
     
@@ -231,7 +231,7 @@
         const dataUrl = product.getAttribute("data-url");
         const dataImage = product.getAttribute("data-image");
         const sectionId = product.getAttribute("data-section-id");
-         console.log({dataUrl,dataImage,sectionId})
+         // console.log({dataUrl,dataImage,sectionId})
         // Add product to the list (if needed)
         // addProduct(dataUrl, dataImage);
         
