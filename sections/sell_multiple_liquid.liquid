@@ -224,7 +224,7 @@
   
   // Controller Functions
   function initialize() {
-    hideProductGrid({{section.id}});
+    hideProductGrid({{section.id|string}});
     
     const productsElements = document.querySelectorAll(".product-link");
     
