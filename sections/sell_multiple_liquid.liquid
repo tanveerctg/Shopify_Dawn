@@ -215,7 +215,7 @@
   }
   
   function updateSelectedProduct(url, image,sectionId) {
-    console.log({selectedProductImage,selectedProductUrl})
+    console.log( document.querySelector(".selected-product-image-{{ sectionId }}"))
     document.querySelector(".selected-product-image-{{ sectionId }}").href = url;
     document.querySelector(".selected-product-url-{{ sectionId }}").src = image;
   }
