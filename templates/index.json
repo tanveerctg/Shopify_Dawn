@@ -282,6 +282,14 @@
     "sell_multiple_liquid_Fii4TE": {
       "type": "sell_multiple_liquid",
       "blocks": {
+        "product_MVbXCJ": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "vertical_position": 10,
+            "horizontal_position": 10
+          }
+        },
         "product_GK7KUA": {
           "type": "product",
           "settings": {
@@ -300,11 +308,32 @@
         }
       },
       "block_order": [
+        "product_MVbXCJ",
         "product_GK7KUA",
         "product_pDbG8p"
       ],
       "settings": {
         "image": "shopify://shop_images/Screenshot_54.png",
+        "image_ratio": "16_9",
+        "image_size": "cover"
+      }
+    },
+    "sell_multiple_liquid_FKDrLN": {
+      "type": "sell_multiple_liquid",
+      "blocks": {
+        "product_bdm8LG": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "vertical_position": 10,
+            "horizontal_position": 10
+          }
+        }
+      },
+      "block_order": [
+        "product_bdm8LG"
+      ],
+      "settings": {
         "image_ratio": "16_9",
         "image_size": "cover"
       }
@@ -317,6 +346,7 @@
     "dcc36258-a980-4e64-a360-64e93d5a07dd",
     "16639964221eaf5659",
     "0002c2cc-0592-4b24-91a7-3be868297576",
-    "sell_multiple_liquid_Fii4TE"
+    "sell_multiple_liquid_Fii4TE",
+    "sell_multiple_liquid_FKDrLN"
   ]
 }
