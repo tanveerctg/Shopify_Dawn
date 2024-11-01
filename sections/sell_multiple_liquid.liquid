@@ -233,6 +233,7 @@
     
     productsElements.forEach((product) => {
       product.addEventListener("click", (e) => {
+        e.preventDefault();
         const dataUrl = product.getAttribute("data-url");
         const dataImage = product.getAttribute("data-image");
         const sectionId = product.getAttribute("data-section-id");
