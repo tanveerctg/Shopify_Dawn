@@ -147,42 +147,40 @@
         {% endif %}"
       >
       {% if section.settings.image %}
-       
         <img src="{{ section.settings.image | image_url }}" width="" height="" class="container-img" style="object-fit:{{section.settings.image_size}};">
       {% else %}
         {{ 'collection-1' |placeholder_svg_tag:'container-img'}}
       {% endif %}
-      
-      
+        
       {% assign isBlockItemsExist = false %}
       
       {% for block in section.blocks %}
         {% assign isBlockItemsExist = true %}
         {%- case block.type -%}
            {%- when 'product' -%}
-
-          {{ block.settings.product.featured_image }}
-
-            
+              {{ block.settings.product.featured_image }}
               <div
                 class="product-link"
                 style="position:absolute;top:{{block.settings.vertical_position}}px;right:{{ block.settings.horizontal_position }}px;"
                 data-url="{{ block.settings.product.url }}"
                 data-image="{{ block.settings.product.featured_image.src | img_url: 'medium' }}"
               ></div>
-           
         {% endcase %}
       {% endfor %}
-
-     
-  
     </div>
 
     
-    <div class="product-grid">
-        <img class="selected-product-image" src="" />
-        <a href="" target="_blank" class="selected-product-url button">View Product</a>
-    </div>
+    {% if isBlockItemsExist != true %}
+      <h4>
+       Show Placeholder Item Image
+      </h4>
+    {% endif %}
+    {% if isBlockItemsExist  %}
+      <div class="product-grid">
+          <img class="selected-product-image" src="" />
+          <a href="" target="_blank" class="selected-product-url button">View Product</a>
+      </div>
+    {% endif %}
 </div>
 
 <script>
