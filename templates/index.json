@@ -324,7 +324,7 @@
         "product_bdm8LG": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "adidas-classic-backpack-legend-ink-multicolour",
             "vertical_position": 10,
             "horizontal_position": 10
           }
@@ -334,6 +334,7 @@
         "product_bdm8LG"
       ],
       "settings": {
+        "image": "shopify://shop_images/044f848776141f1024eae6c610a28d12.jpg",
         "image_ratio": "16_9",
         "image_size": "cover"
       }
