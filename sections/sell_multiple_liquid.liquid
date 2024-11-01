@@ -208,7 +208,7 @@
   
   function displayProductGrid(section_id) {
     console.log({section_id,productGrid})
-    productGrid.style.display = "flex";
+    document.querySelector(`.product-grid-${section_id}`).style.display = "flex";
   }
   
   function hideProductGrid(section_id) {
