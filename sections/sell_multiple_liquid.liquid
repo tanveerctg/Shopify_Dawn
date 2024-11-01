@@ -224,7 +224,7 @@
   
   // Controller Functions
   function initialize() {
-    hideProductGrid({{section.id|string}});
+    hideProductGrid("{{section.id}}");
     
     const productsElements = document.querySelectorAll(".product-link");
     
@@ -238,7 +238,7 @@
         // addProduct(dataUrl, dataImage);
         
         // Update the view with selected product
-        displayProductGrid({{section.id}});
+        displayProductGrid("{{section.id}}");
         // updateSelectedProduct(dataUrl, dataImage,sectionId);
       });
     });
