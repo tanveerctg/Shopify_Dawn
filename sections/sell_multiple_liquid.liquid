@@ -229,7 +229,8 @@
       product.addEventListener("click", (e) => {
         const dataUrl = product.getAttribute("data-url");
         const dataImage = product.getAttribute("data-image");
-         console.log({dataUrl,dataImage})
+        const sectionId = product.getAttribute("section-id");
+         console.log({dataUrl,dataImage,sectionId})
         // Add product to the list (if needed)
         // addProduct(dataUrl, dataImage);
         
