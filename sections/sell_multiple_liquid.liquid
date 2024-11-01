@@ -203,8 +203,8 @@
   console.log("HELLLO")
   // View Functions
   const productGrid = document.querySelector(".product-grid-{{ section.id }}");
-  const selectedProductImage = document.querySelector(".selected-product-image");
-  const selectedProductUrl = document.querySelector(".selected-product-url");
+  const selectedProductImage = document.querySelector(".selected-product-image-{{ section.id }}");
+  const selectedProductUrl = document.querySelector(".selected-product-url-{{ section.id }}");
   
   function displayProductGrid() {
     productGrid.style.display = "flex";
