@@ -177,7 +177,10 @@
     {% endif %}
   
     <div class="product-grid">
-          <img class="selected-product-image" src="{{ 'collection-1' | image_url:"medium"}}" />
+         
+      <img class="selected-product-image" src="{{ image }}" 
+     alt="Product Image" 
+     onerror="this.onerror=null;this.src='{{ 'placeholder-image-url' | asset_url }}';" />
           <a href="" target="_blank" class="selected-product-url button">View Product</a>
     </div>
 
