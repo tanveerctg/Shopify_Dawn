@@ -179,9 +179,9 @@
     {% endif %}
   
     <div class="product-grid-{{ section.id }}">
-          <img class="selected-product-image" src="">
+          <img class="selected-product-image-{{ section.id }}" src="">
 
-          <a href="" target="_blank" class="selected-product-url button">View Product</a>
+          <a href="" target="_blank" class="selected-product-url-{{ section.id }} button">View Product</a>
     </div>
 
 </div>
@@ -219,7 +219,9 @@
   function updateSelectedProduct(url, image,sectionId) {
     console.log({sectionId})
     selectedProductUrl.href = url;
+    document.querySelector(`.selected-product-url-${sectionId}`).href = url;
     selectedProductImage.src = image;
+    document.querySelector(`.selected-product-url-${sectionId}`).src = image;
   }
   
   // Controller Functions
