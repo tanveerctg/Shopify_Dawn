@@ -206,11 +206,13 @@
   const selectedProductImage = document.querySelector(".selected-product-image-{{ section.id }}");
   const selectedProductUrl = document.querySelector(".selected-product-url-{{ section.id }}");
   
-  function displayProductGrid() {
+  function displayProductGrid(section_id) {
+    console.log({section_id})
     productGrid.style.display = "flex";
   }
   
-  function hideProductGrid() {
+  function hideProductGrid(section_id) {
+    console.log({section_id})
     productGrid.style.display = "none";
   }
   
@@ -222,7 +224,7 @@
   
   // Controller Functions
   function initialize() {
-    hideProductGrid({{section.id}});
+    hideProductGrid(section.id);
     
     const productsElements = document.querySelectorAll(".product-link");
     
