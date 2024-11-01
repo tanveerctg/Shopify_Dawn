@@ -168,7 +168,7 @@
                 class="product-link"
                 style="position:absolute;top:{{block.settings.vertical_position}}px;right:{{ block.settings.horizontal_position }}px;"
                 data-url="{{ block.settings.product.url }}"
-                data-image="{{ block.settings.product.featured_image }}"
+                data-image="{{ block.settings.product.featured_image |file_img_url }}"
               ></div>
            
         {% endcase %}
