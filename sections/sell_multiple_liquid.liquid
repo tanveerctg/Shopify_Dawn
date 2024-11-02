@@ -199,27 +199,22 @@
     
   console.log("HELLLO")
   // View Functions
-  const productGrid = document.querySelector(".product-grid-{{ section.id }}");
-  const selectedProductImage = document.querySelector(".selected-product-image-{{ section.id }}");
-  const selectedProductUrl = document.querySelector(".selected-product-url-{{ section.id }}");
   
   function displayProductGrid(section_id) {
     console.log({section_id,productGrid})
     document.querySelector(`.product-grid-${section_id}`).style.display = "flex";
-    // document.querySelector(`.product-grid-${section_id}`).style.flexDirection = "column";
   }
   
   function hideProductGrid(section_id) {
     console.log({section_id,productGrid})
-    productGrid.style.display = "none";
+
+    document.querySelector(`.product-grid-${section_id}`).style.display = "none";
   }
   
-  function updateSelectedProduct(url, image,sectionId) {
+  function updateSelectedProduct(product_url, product_image_url , sectionId) {
     console.log({sectionId})
-    // selectedProductUrl.href = url;
-    document.querySelector(`.selected-product-url-${sectionId}`).href = url;
-    // selectedProductImage.src = image;
-    document.querySelector(`.selected-product-image-${sectionId}`).src = image;
+    document.querySelector(`.selected-product-url-${sectionId}`).href = product_url;
+    document.querySelector(`.selected-product-image-${sectionId}`).src = product_image_url;
   }
   
   // Controller Functions
@@ -231,16 +226,13 @@
     productsElements.forEach((product) => {
       product.addEventListener("click", (e) => {
         e.preventDefault();
-        const dataUrl = product.getAttribute("data-url");
-        const dataImage = product.getAttribute("data-image");
+        const product_url = product.getAttribute("data-url");
+        const product_image_url = product.getAttribute("data-image");
         const sectionId = product.getAttribute("data-section-id");
-         // console.log({dataUrl,dataImage,sectionId})
-        // Add product to the list (if needed)
-        // addProduct(dataUrl, dataImage);
-        
+       
         // Update the view with selected product
         displayProductGrid(sectionId);
-        updateSelectedProduct(dataUrl, dataImage,sectionId);
+        updateSelectedProduct(product_url, product_image_url,sectionId);
       });
     });
   }
