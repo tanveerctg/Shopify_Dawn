@@ -170,7 +170,11 @@
       {% endfor %}
     </div>
 
-  
+  {% if isBlockItemsExist ==false %}
+    <div class="product-grid">
+        Show Placeholder Image
+    </div>
+  {% endif %}
     <div class="product-grid product-grid-{{ section.id }}">
           <img class="selected-product-image selected-product-image-{{ section.id }}" width="" height="" src="" />
           <a href="" target="_blank" class="selected-product-url-{{ section.id }} button">View Product</a>
