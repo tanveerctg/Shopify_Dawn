@@ -176,8 +176,8 @@
     </div>
   {% endif %}
     <div class="product-grid product-grid-{{ section.id }}">
-          <img class="selected-product-image selected-product-image-{{ section.id }}" width="" height="" src="" />
-          <a href="" target="_blank" class="selected-product-url-{{ section.id }} button">View Product</a>
+          <!-- <img class="selected-product-image selected-product-image-{{ section.id }}" width="" height="" src="" />
+          <a href="" target="_blank" class="selected-product-url-{{ section.id }} button">View Product</a> -->
     </div>
 
 </div>
@@ -207,12 +207,35 @@
     productGrid.style.display = "none";
   }
   
-  function updateSelectedProduct(url, image,sectionId) {
+  function updateSelectedProduct(productUrl, productImageSrc,sectionId) {
     console.log({sectionId})
    
     document.querySelector(`.selected-product-url-${sectionId}`).href = url;
-  
     document.querySelector(`.selected-product-image-${sectionId}`).src = image;
+
+
+   // Create img element
+    var imgElement = document.createElement('img');
+    imgElement.className = `selected-product-image selected-product-image-${sectionId}`;
+    imgElement.src = productImageSrc; // Set the product image URL
+    imgElement.width = 200; // Set width if necessary
+    imgElement.height = 200; // Set height if necessary
+    
+    // Create anchor element
+    var anchorElement = document.createElement('a');
+    anchorElement.className = `selected-product-url-${sectionId} button`;
+    anchorElement.href = productUrl; // Set the product URL
+    anchorElement.target = "_blank";
+    anchorElement.textContent = "View Product"; // Set button text
+    
+    // Get the product grid container
+    
+    // Insert the img and a elements into the product grid
+    productGrid.appendChild(imgElement);
+    productGrid.appendChild(anchorElement);
+
+
+    
   }
   
   // Controller Functions
