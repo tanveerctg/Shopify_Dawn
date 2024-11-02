@@ -326,12 +326,21 @@
             "vertical_position": 81,
             "horizontal_position": 27
           }
+        },
+        "product_pzfCzV": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "vertical_position": 10,
+            "horizontal_position": 10
+          }
         }
       },
       "block_order": [
         "product_MVbXCJ",
         "product_GK7KUA",
-        "product_pDbG8p"
+        "product_pDbG8p",
+        "product_pzfCzV"
       ],
       "settings": {
         "image": "shopify://shop_images/Screenshot_54.png",
