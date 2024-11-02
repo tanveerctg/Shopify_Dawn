@@ -297,7 +297,7 @@
       "settings": {
         "image": "shopify://shop_images/black.png",
         "image_ratio": "16_9",
-        "image_size": "cover"
+        "image_size": "contain"
       }
     },
     "sell_multiple_liquid_Fii4TE": {
