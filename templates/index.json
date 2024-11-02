@@ -331,8 +331,8 @@
           "type": "product",
           "settings": {
             "product": "",
-            "vertical_position": 10,
-            "horizontal_position": 10
+            "vertical_position": 48,
+            "horizontal_position": 93
           }
         }
       },
