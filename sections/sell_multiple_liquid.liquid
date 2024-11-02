@@ -131,7 +131,7 @@
 
 
 <div class="wrapper">
-  {{ section.id }}
+
     <div 
       style="{% if section.settings.image_ratio == '16_9' %}
           position: relative;
@@ -203,8 +203,6 @@
   console.log("HELLLO")
   // View Functions
   const productGrid = document.querySelector(".product-grid-{{ section.id }}");
-  const selectedProductImage = document.querySelector(".selected-product-image-{{ section.id }}");
-  const selectedProductUrl = document.querySelector(".selected-product-url-{{ section.id }}");
   
   function displayProductGrid(section_id) {
     console.log({section_id,productGrid})
@@ -219,9 +217,9 @@
   
   function updateSelectedProduct(url, image,sectionId) {
     console.log({sectionId})
-    // selectedProductUrl.href = url;
+   
     document.querySelector(`.selected-product-url-${sectionId}`).href = url;
-    // selectedProductImage.src = image;
+  
     document.querySelector(`.selected-product-image-${sectionId}`).src = image;
   }
   
