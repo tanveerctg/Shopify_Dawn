@@ -210,11 +210,10 @@
   function updateSelectedProduct(productUrl, productImageSrc,sectionId) {
     console.log({sectionId})
    
-    // document.querySelector(`.selected-product-url-${sectionId}`).href = productUrl;
-    // document.querySelector(`.selected-product-image-${sectionId}`).src = productImageSrc;
+    const productGrid=document.querySelector(`.product-grid-${sectionId}`)
 
-  // Clear previous contents (remove old img and a elements)
-    document.querySelector(`.product-grid-${sectionId}`).innerHTML = '';
+    // Clear previous contents (remove old img and a elements)
+    productGrid.innerHTML = '';
     
    // Create img element
     var imgElement = document.createElement('img');
@@ -233,8 +232,8 @@
     // Get the product grid container
     
     // Insert the img and a elements into the product grid
-    document.querySelector(`.product-grid-${sectionId}`).appendChild(imgElement);
-    document.querySelector(`.product-grid-${sectionId}`).appendChild(anchorElement);
+    productGrid.appendChild(imgElement);
+    productGrid.appendChild(anchorElement);
 
 
     
