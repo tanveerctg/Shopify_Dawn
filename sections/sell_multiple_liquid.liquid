@@ -195,7 +195,7 @@
 
   (()=>{
 
-    
+  const product_grid=document.querySelector(`.product-grid-${section_id}`)
   console.log("HELLLO")
   // View Functions
   
@@ -207,7 +207,7 @@
   function hideProductGrid(section_id) {
     console.log({section_id,productGrid})
 
-    document.querySelector(`.product-grid-${section_id}`).style.display = "none";
+    product_grid.style.display = "none";
   }
   
   function updateSelectedProduct(product_url, product_image_url , sectionId) {
