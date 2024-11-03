@@ -275,7 +275,10 @@
         const productId=product.getAttribute("data-product-id");
 
         console.log({productId})
-        
+        productsElements.forEach(product=>{
+          product.classList.remove("selected")
+        })
+        document.querySelector(`.${productId}`).classList.add("selected")
         // Update the view with selected product
         displayProductGrid(sectionId);
         updateSelectedProduct(dataUrl, dataImage,sectionId);
