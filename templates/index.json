@@ -310,23 +310,39 @@
           "type": "product",
           "settings": {
             "product": "",
-            "vertical_position": 10,
-            "horizontal_position": 10
+            "vertical_position": 41,
+            "horizontal_position": 46
+          }
+        },
+        "product_GMjV7V": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "vertical_position": 54,
+            "horizontal_position": 59
           }
         },
         "product_GK7KUA": {
           "type": "product",
           "settings": {
             "product": "adidas-classic-backpack-legend-ink-multicolour",
-            "vertical_position": 45,
-            "horizontal_position": 45
+            "vertical_position": 43,
+            "horizontal_position": 69
+          }
+        },
+        "product_iKmXtM": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "vertical_position": 54,
+            "horizontal_position": 38
           }
         },
         "product_pDbG8p": {
           "type": "product",
           "settings": {
             "product": "asics-tiger-gel-lyte-v-30-years-of-gel-pack",
-            "vertical_position": 81,
+            "vertical_position": 41,
             "horizontal_position": 27
           }
         },
@@ -334,14 +350,16 @@
           "type": "product",
           "settings": {
             "product": "",
-            "vertical_position": 48,
+            "vertical_position": 58,
             "horizontal_position": 93
           }
         }
       },
       "block_order": [
         "product_MVbXCJ",
+        "product_GMjV7V",
         "product_GK7KUA",
+        "product_iKmXtM",
         "product_pDbG8p",
         "product_pzfCzV"
       ],
@@ -351,7 +369,7 @@
       "settings": {
         "image": "shopify://shop_images/Screenshot_54.png",
         "image_ratio": "9_16",
-        "image_size": "cover",
+        "image_size": "contain",
         "max_width": "1200",
         "padding_y": "15",
         "padding_x": "15"
