@@ -263,7 +263,7 @@
   function initialize() {
     // hideProductGrid("{{section.id}}");
     
-    const productsElements = document.querySelectorAll(".product-link");
+    const productsElements = document.querySelectorAll(".product-link-{{ section.id }}");
     
     productsElements.forEach((product) => {
       product.addEventListener("click", (e) => {
@@ -271,6 +271,7 @@
         const dataUrl = product.getAttribute("data-url");
         const dataImage = product.getAttribute("data-image");
         const sectionId = product.getAttribute("data-section-id");
+        
         
         // Update the view with selected product
         displayProductGrid(sectionId);
