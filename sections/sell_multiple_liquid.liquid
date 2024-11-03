@@ -1,7 +1,7 @@
 {% style %}
   .sell_multiple_wrapper{
         display: flex;
-        gap:5px;
+        gap:20px;
   }
   .container-placeholder-image{
        height: 533px;
@@ -131,52 +131,50 @@
 
 <div class="sell_multiple_wrapper" style="max-width:{{ section.settings.max_width }}px;margin:0 auto;padding:{{ section.settings.padding_y }}px {{ section.settings.padding_x }}px;">
     <div 
-      style="{% if section.settings.image_ratio == '16_9' %}
-          position: relative;
-          max-width: 533px;
-          height: 300px;
-          width: 100%;
-          background-color: #f6f6f6;
+        style="{% if section.settings.image_ratio == '16_9' %}
+            position: relative;
+            max-width: 533px;
+            height: 300px;
+            width: 100%;
+            background-color: #f6f6f6;
+          {% else %}
+            position: relative;
+            max-width: 300px;
+            width:100%;
+            height: 533px;
+            background-color: #f6f6f6;
+          {% endif %}"
+        >
+        {% if section.settings.image %}
+          <img src="{{ section.settings.image | image_url }}" width="" height="" class="container-img" style="object-fit:{{section.settings.image_size}};">
         {% else %}
-          position: relative;
-          max-width: 300px;
-          width:100%;
-          height: 533px;
-          background-color: #f6f6f6;
-        {% endif %}"
-      >
-      {% if section.settings.image %}
-        <img src="{{ section.settings.image | image_url }}" width="" height="" class="container-img" style="object-fit:{{section.settings.image_size}};">
-      {% else %}
-        {{ 'collection-1' |placeholder_svg_tag:'container-img'}}
-      {% endif %}
+          {{ 'collection-1' |placeholder_svg_tag:'container-img'}}
+        {% endif %}
+          
+        {% assign isBlockItemsExist = false %}
         
-      {% assign isBlockItemsExist = false %}
-      
-      {% for block in section.blocks %}
-        {% assign isBlockItemsExist = true %}
-        {%- case block.type -%}
-           {%- when 'product' -%}
-             
-              <div
-                class="product-link"
-                style="position:absolute;top:{{block.settings.vertical_position}}px;right:{{ block.settings.horizontal_position }}px;"
-                data-section-id="{{ section.id }}"
-                data-url="{{ block.settings.product.url }}"
-                data-image="{{ block.settings.product.featured_image.src | img_url: 'medium' }}"
-              ></div>
-        {% endcase %}
-      {% endfor %}
+        {% for block in section.blocks %}
+          {% assign isBlockItemsExist = true %}
+          {%- case block.type -%}
+             {%- when 'product' -%}
+               
+                <div
+                  class="product-link"
+                  style="position:absolute;top:{{block.settings.vertical_position}}px;right:{{ block.settings.horizontal_position }}px;"
+                  data-section-id="{{ section.id }}"
+                  data-url="{{ block.settings.product.url }}"
+                  data-image="{{ block.settings.product.featured_image.src | img_url: 'medium' }}"
+                ></div>
+          {% endcase %}
+        {% endfor %}
     </div>
-
-  {% if isBlockItemsExist ==false %}
-    <div class="product-grid">
-        Show Placeholder Image
-    </div>
-  {% endif %}
+  
+    {% if isBlockItemsExist ==false %}
+      <div class="product-grid">
+          Show Placeholder Image
+      </div>
+    {% endif %}
     <div class="product-grid product-grid-{{ section.id }}">
-          <!-- <img class="selected-product-image selected-product-image-{{ section.id }}" width="" height="" src="" />
-          <a href="" target="_blank" class="selected-product-url-{{ section.id }} button">View Product</a> -->
     </div>
 
 </div>
