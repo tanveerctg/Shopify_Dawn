@@ -176,7 +176,7 @@
           {%- case block.type -%}
              {%- when 'product' -%} 
                 <div
-                  class="product-link product-link-{{ section.id }}-{{ forloop.index }} {% if forloop.first %}selected{% endif %}"
+                  class="product-link product-link-{{ section.id }} product-link-{{ section.id }}-{{ forloop.index }} {% if forloop.first %}selected{% endif %}"
                   style="position:absolute;top:{{block.settings.vertical_position}}%;right:{{ block.settings.horizontal_position }}%;"
                   data-product-id={{ section.id }}-{{ forloop.index }}
                   data-section-id="{{ section.id }}"
