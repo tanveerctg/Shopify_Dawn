@@ -129,7 +129,7 @@
   
 {% endstyle %}
 
-<div class="sell_multiple_wrapper" style="justify-content:{{ section.settings.postion }}; margin:0 auto;padding:{{ section.settings.padding_y }}px {{ section.settings.padding_x }}px;">
+<div class="sell_multiple_wrapper sell_multiple_wrapper-{{ section.id }}" style="justify-content:{{ section.settings.postion }}; margin:0 auto;padding:{{ section.settings.padding_y }}px {{ section.settings.padding_x }}px;">
     <div 
         style="{% if section.settings.image_ratio == '16_9' %}
             position: relative;
@@ -247,9 +247,6 @@
         const dataUrl = product.getAttribute("data-url");
         const dataImage = product.getAttribute("data-image");
         const sectionId = product.getAttribute("data-section-id");
-         // console.log({dataUrl,dataImage,sectionId})
-        // Add product to the list (if needed)
-        // addProduct(dataUrl, dataImage);
         
         // Update the view with selected product
         displayProductGrid(sectionId);
