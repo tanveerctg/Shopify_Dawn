@@ -296,7 +296,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/black.png",
-        "image_ratio": "16_9",
+        "image_ratio": "9_16",
         "image_size": "contain",
         "max_width": "900",
         "padding_y": "15",
