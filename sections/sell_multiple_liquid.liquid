@@ -163,8 +163,9 @@
           {%- case block.type -%}
              {%- when 'product' -%} 
                 <div
-                  class="product-link"
+                  class="product-link product-link-{{ section.id }}-{{ forloop.index }}"
                   style="position:absolute;top:{{block.settings.vertical_position}}%;right:{{ block.settings.horizontal_position }}%;"
+                  data-product-id={{ section.id }}-{{ forloop.index }}
                   data-section-id="{{ section.id }}"
                   data-url="{{ block.settings.product.url }}"
                   data-image="{{ block.settings.product.featured_image.src | img_url: 'medium' }}"
