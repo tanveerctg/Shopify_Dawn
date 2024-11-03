@@ -264,6 +264,7 @@
     // hideProductGrid("{{section.id}}");
     
     const productsElements = document.querySelectorAll(".product-link-{{ section.id }}");
+    console.log({productsElements})
     
     productsElements.forEach((product) => {
       product.addEventListener("click", (e) => {
