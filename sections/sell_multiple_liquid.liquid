@@ -272,7 +272,9 @@
         const dataUrl = product.getAttribute("data-url");
         const dataImage = product.getAttribute("data-image");
         const sectionId = product.getAttribute("data-section-id");
-        
+        const productId=product.getAttribute("data-product-id");
+
+        console.log({productId})
         
         // Update the view with selected product
         displayProductGrid(sectionId);
