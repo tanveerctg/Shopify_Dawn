@@ -129,7 +129,7 @@
   
 {% endstyle %}
 
-<div class="sell_multiple_wrapper" style="max-width:{{ section.settings.max_width }}px;margin:0 auto;padding:{{ section.settings.padding_y }}px {{ section.settings.padding_x }}px;">
+<div class="sell_multiple_wrapper" style="justify-content:{{ section.settings.postion }}; margin:0 auto;padding:{{ section.settings.padding_y }}px {{ section.settings.padding_x }}px;">
     <div 
         style="{% if section.settings.image_ratio == '16_9' %}
             position: relative;
@@ -315,6 +315,27 @@
             ],
             "default": "cover"
           },
+          {
+            "type": "select",
+            "id": "postion",
+            "label": "Horizontal Position",
+            "options": [
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "flex-start",
+                "label": "Start"
+              },
+              {
+                "value": "flex-end",
+                "label": "End"
+              },
+            ],
+            "default": "center"
+          },
+      
           {
             "type": "number",
             "id": "max_width",
