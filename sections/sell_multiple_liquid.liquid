@@ -190,7 +190,7 @@
   document.addEventListener('DOMContentLoaded', function() {
         // hideProductGrid("{{section.id}}");
       console.log("Section",document.querySelector(".sell_multiple_wrapper-{{ section.id }}"))
-      console.log({{section.blocks}})
+    
         
   });
    
@@ -212,7 +212,7 @@
     const productGrid=document.querySelector(`.product-grid-${sectionId}`)
 
     // Clear previous contents (remove old img and a elements)
-    productGrid.innerHTML = '';
+    productGrid.style.display = 'none';
     
    // Create img element
     var imgElement = document.createElement('img');
