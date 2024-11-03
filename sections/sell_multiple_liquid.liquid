@@ -122,11 +122,13 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         transition: all 0.3s ease; /* Smooth transition for hover effects */
         text-decoration: none;
+        border:0px;
+        outline:none;
       }
 
       .button:hover {
-        background-color: #0056b3; /* Slightly darker green on hover */
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+        /* background-color: #0056b3; /* Slightly darker green on hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */ */
       }
 
       .button:focus {
@@ -204,15 +206,12 @@
 <script>
 
   (()=>{
-  console.log("HELLLO")
   // View Functions
   const productGrid = document.querySelector(".product-grid-{{ section.id }}");
 
   document.addEventListener('DOMContentLoaded', function() {
-        // hideProductGrid("{{section.id}}");
-      console.log("Section",document.querySelector(".sell_multiple_wrapper-{{ section.id }}"))
-    
-        
+      // hideProductGrid("{{section.id}}");
+      console.log("Section",document.querySelector(".sell_multiple_wrapper-{{ section.id }}"))   
   });
    
   
@@ -249,14 +248,9 @@
     anchorElement.target = "_blank";
     anchorElement.textContent = "View Product"; // Set button text
     
-    // Get the product grid container
-    
     // Insert the img and a elements into the product grid
     productGrid.appendChild(imgElement);
     productGrid.appendChild(anchorElement);
-
-
-    
   }
   
   // Controller Functions
