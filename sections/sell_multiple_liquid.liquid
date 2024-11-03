@@ -152,9 +152,13 @@
         {% endif %}
           
         {% assign isBlockItemsExist = false %}
-        
+        {% assign first_product_img_link='' %}
+        {% assign first_product_link=''  %}
+      
         {% for block in section.blocks %}
           {% assign isBlockItemsExist = true %}
+          {% assign first_product_img_link=block.settings.product.featured_image.src %}
+          {% assign first_product_link= block.settings.product.url %}
           {%- case block.type -%}
              {%- when 'product' -%} 
                 <div
@@ -174,7 +178,7 @@
       </div>
     {% endif %}
     <div class="product-grid product-grid-{{ section.id }}">
-        <img class="selected-product-image" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/908486_v9_ba.jpg" />
+        <img class="selected-product-image" src="{{ first_product_img_link }}" />
         <a href="" target="_blank" class="selected-product-url button">View Product</a>
     </div>
 
