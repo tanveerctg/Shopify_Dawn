@@ -157,8 +157,10 @@
       
         {% for block in section.blocks %}
           {% assign isBlockItemsExist = true %}
-          {% assign first_product_img_link=block.settings.product.featured_image.src| img_url: 'medium' %}
-          {% assign first_product_link= block.settings.product.url %}
+          {% if forloop.first == true %}
+            {% assign first_product_img_link=block.settings.product.featured_image.src| img_url: 'medium' %}
+            {% assign first_product_link= block.settings.product.url %}
+          {% endif %}
           {%- case block.type -%}
              {%- when 'product' -%} 
                 <div
