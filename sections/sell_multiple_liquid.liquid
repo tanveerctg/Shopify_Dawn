@@ -36,7 +36,21 @@
         animation: pulse 1.5s infinite;
         cursor: pointer;
       }
-
+      .product-link.selected {
+        background-color: #ff3933; /* You can change the color */
+        animation: red-pulse 1.5s infinite;
+      }
+     @keyframes red-pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(255, 57, 51, 0.7);
+        }
+        70% {
+          box-shadow: 0 0 0 15px rgba(255, 57, 51, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(255, 57, 51, 0);
+        }
+      }
       @keyframes pulse {
         0% {
           box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.7);
