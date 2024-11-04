@@ -279,170 +279,6 @@
         "padding_bottom": 20
       }
     },
-    "sell_multiple_liquid_Kx9x4j": {
-      "type": "sell_multiple_liquid",
-      "blocks": {
-        "product_nVTKec": {
-          "type": "product",
-          "settings": {
-            "product": "adidas-superstar-80s",
-            "vertical_position": 10,
-            "horizontal_position": 10
-          }
-        }
-      },
-      "block_order": [
-        "product_nVTKec"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/images.jpg",
-        "image_ratio": "16_9",
-        "image_size": "contain",
-        "postion": "center",
-        "max_width": 1200,
-        "padding_y": 15,
-        "padding_x": 15
-      }
-    },
-    "sell_multiple_liquid_Fii4TE": {
-      "type": "sell_multiple_liquid",
-      "blocks": {
-        "product_MVbXCJ": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "vertical_position": 41,
-            "horizontal_position": 46
-          }
-        },
-        "product_GMjV7V": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "vertical_position": 54,
-            "horizontal_position": 59
-          }
-        },
-        "product_GK7KUA": {
-          "type": "product",
-          "settings": {
-            "product": "adidas-classic-backpack-legend-ink-multicolour",
-            "vertical_position": 43,
-            "horizontal_position": 69
-          }
-        },
-        "product_iKmXtM": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "vertical_position": 54,
-            "horizontal_position": 38
-          }
-        },
-        "product_pDbG8p": {
-          "type": "product",
-          "settings": {
-            "product": "asics-tiger-gel-lyte-v-30-years-of-gel-pack",
-            "vertical_position": 41,
-            "horizontal_position": 27
-          }
-        },
-        "product_pzfCzV": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "vertical_position": 58,
-            "horizontal_position": 93
-          }
-        }
-      },
-      "block_order": [
-        "product_MVbXCJ",
-        "product_GMjV7V",
-        "product_GK7KUA",
-        "product_iKmXtM",
-        "product_pDbG8p",
-        "product_pzfCzV"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Screenshot_54.png",
-        "image_ratio": "16_9",
-        "image_size": "cover",
-        "postion": "center",
-        "max_width": 1200,
-        "padding_y": 15,
-        "padding_x": 15
-      }
-    },
-    "sell_multiple_liquid_3kzMHi": {
-      "type": "sell_multiple_liquid",
-      "blocks": {
-        "product_fwJ4tk": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "vertical_position": 10,
-            "horizontal_position": 10
-          }
-        }
-      },
-      "block_order": [
-        "product_fwJ4tk"
-      ],
-      "settings": {
-        "image_ratio": "16_9",
-        "image_size": "cover",
-        "postion": "center",
-        "max_width": 1200,
-        "padding_y": 15,
-        "padding_x": 15
-      }
-    },
-    "sell_multiple_liquid_x3ARxm": {
-      "type": "sell_multiple_liquid",
-      "blocks": {
-        "product_MTtNe6": {
-          "type": "product",
-          "settings": {
-            "product": "adidas-classic-backpack-legend-ink-multicolour",
-            "vertical_position": 60,
-            "horizontal_position": 47
-          }
-        },
-        "product_rVKBnA": {
-          "type": "product",
-          "settings": {
-            "product": "dr-martens-1460z-dmc-8-eye-boot-cherry-smooth",
-            "vertical_position": 37,
-            "horizontal_position": 58
-          }
-        },
-        "product_JXfLir": {
-          "type": "product",
-          "settings": {
-            "product": "galaxy-box",
-            "vertical_position": 44,
-            "horizontal_position": 39
-          }
-        }
-      },
-      "block_order": [
-        "product_MTtNe6",
-        "product_rVKBnA",
-        "product_JXfLir"
-      ],
-      "settings": {
-        "image_ratio": "16_9",
-        "image_size": "cover",
-        "postion": "center",
-        "max_width": 1200,
-        "padding_y": 10,
-        "padding_x": 17
-      }
-    },
     "sell_multiple_liquid_rEDcbr": {
       "type": "sell_multiple_liquid",
       "blocks": {
@@ -482,7 +318,7 @@
         "image_size": "cover",
         "postion": "center",
         "max_width": 1200,
-        "padding_y": 15,
+        "padding_y": 20,
         "padding_x": 15
       }
     }
@@ -494,10 +330,6 @@
     "dcc36258-a980-4e64-a360-64e93d5a07dd",
     "16639964221eaf5659",
     "0002c2cc-0592-4b24-91a7-3be868297576",
-    "sell_multiple_liquid_Kx9x4j",
-    "sell_multiple_liquid_Fii4TE",
-    "sell_multiple_liquid_3kzMHi",
-    "sell_multiple_liquid_x3ARxm",
     "sell_multiple_liquid_rEDcbr"
   ]
 }
