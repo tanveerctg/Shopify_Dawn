@@ -442,6 +442,49 @@
         "padding_y": 10,
         "padding_x": 17
       }
+    },
+    "sell_multiple_liquid_rEDcbr": {
+      "type": "sell_multiple_liquid",
+      "blocks": {
+        "product_JMmGNJ": {
+          "type": "product",
+          "settings": {
+            "product": "ray-ban-classic",
+            "vertical_position": 32,
+            "horizontal_position": 58
+          }
+        },
+        "product_jXtW4w": {
+          "type": "product",
+          "settings": {
+            "product": "ben-sherman-slim-stretch-chino",
+            "vertical_position": 72,
+            "horizontal_position": 60
+          }
+        },
+        "product_qwxzhU": {
+          "type": "product",
+          "settings": {
+            "product": "flex-fit-mini-ottoman-black",
+            "vertical_position": 27,
+            "horizontal_position": 65
+          }
+        }
+      },
+      "block_order": [
+        "product_JMmGNJ",
+        "product_jXtW4w",
+        "product_qwxzhU"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/model.jpg",
+        "image_ratio": "9_16",
+        "image_size": "cover",
+        "postion": "center",
+        "max_width": 1200,
+        "padding_y": 15,
+        "padding_x": 15
+      }
     }
   },
   "order": [
@@ -454,6 +497,7 @@
     "sell_multiple_liquid_Kx9x4j",
     "sell_multiple_liquid_Fii4TE",
     "sell_multiple_liquid_3kzMHi",
-    "sell_multiple_liquid_x3ARxm"
+    "sell_multiple_liquid_x3ARxm",
+    "sell_multiple_liquid_rEDcbr"
   ]
 }
