@@ -298,7 +298,10 @@
         "image": "shopify://shop_images/images.jpg",
         "image_ratio": "16_9",
         "image_size": "contain",
-        "postion": "center"
+        "postion": "center",
+        "max_width": 1200,
+        "padding_y": 15,
+        "padding_x": 15
       }
     },
     "sell_multiple_liquid_Fii4TE": {
@@ -368,7 +371,10 @@
         "image": "shopify://shop_images/Screenshot_54.png",
         "image_ratio": "16_9",
         "image_size": "cover",
-        "postion": "center"
+        "postion": "center",
+        "max_width": 1200,
+        "padding_y": 15,
+        "padding_x": 15
       }
     },
     "sell_multiple_liquid_3kzMHi": {
@@ -389,7 +395,10 @@
       "settings": {
         "image_ratio": "16_9",
         "image_size": "cover",
-        "postion": "center"
+        "postion": "center",
+        "max_width": 1200,
+        "padding_y": 15,
+        "padding_x": 15
       }
     },
     "sell_multiple_liquid_x3ARxm": {
@@ -430,8 +439,8 @@
         "image_size": "cover",
         "postion": "center",
         "max_width": 1200,
-        "padding_y": 15,
-        "padding_x": 15
+        "padding_y": 10,
+        "padding_x": 17
       }
     }
   },
