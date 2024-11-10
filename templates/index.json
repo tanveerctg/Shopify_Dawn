@@ -214,21 +214,18 @@
         "fccd8346-68bd-4c95-8d4e-8fb63c41a292",
         "265d756f-3d51-476c-8d56-9b5efa7d918d"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "16639964221eaf5659": {
       "type": "apps",
       "blocks": {
         "74782814-272a-499d-909f-920545066e8d": {
           "type": "shopify://apps/judge-me-reviews/blocks/verified_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         },
         "dc5189de-e35b-45d9-91be-d7a30dfe320d": {
           "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -321,6 +318,32 @@
         "padding_y": 20,
         "padding_x": 15
       }
+    },
+    "1731248583dccc5399": {
+      "type": "apps",
+      "blocks": {
+        "lookfy_gallery_lookfy_gallery_RgqFTd": {
+          "type": "shopify://apps/lookfy-gallery/blocks/lookfy-gallery/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
+          "settings": {
+            "dynamic_source": "",
+            "title": "",
+            "subtitle": "",
+            "heading_size": "1",
+            "heading_align": "left",
+            "custom_class": "",
+            "background_color": "",
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "padding_left_right": 0
+          }
+        }
+      },
+      "block_order": [
+        "lookfy_gallery_lookfy_gallery_RgqFTd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -330,6 +353,7 @@
     "dcc36258-a980-4e64-a360-64e93d5a07dd",
     "16639964221eaf5659",
     "0002c2cc-0592-4b24-91a7-3be868297576",
-    "sell_multiple_liquid_rEDcbr"
+    "sell_multiple_liquid_rEDcbr",
+    "1731248583dccc5399"
   ]
 }
