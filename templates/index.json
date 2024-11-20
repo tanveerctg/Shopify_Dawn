@@ -226,11 +226,27 @@
         "dc5189de-e35b-45d9-91be-d7a30dfe320d": {
           "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
+        },
+        "lookfy_gallery_lookfy_gallery_BGTyQz": {
+          "type": "shopify://apps/lookfy-gallery/blocks/lookfy-gallery/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
+          "settings": {
+            "dynamic_source": "",
+            "title": "",
+            "subtitle": "",
+            "heading_size": "1",
+            "heading_align": "left",
+            "custom_class": "",
+            "background_color": "",
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "padding_left_right": 0
+          }
         }
       },
       "block_order": [
         "74782814-272a-499d-909f-920545066e8d",
-        "dc5189de-e35b-45d9-91be-d7a30dfe320d"
+        "dc5189de-e35b-45d9-91be-d7a30dfe320d",
+        "lookfy_gallery_lookfy_gallery_BGTyQz"
       ],
       "settings": {
         "include_margins": true
@@ -345,6 +361,155 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "rich_text_w7rhGU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iqmyGz": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_xPMLQV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_KwHbWE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iqmyGz",
+        "text_xPMLQV",
+        "button_KwHbWE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_product_Vt3UEP": {
+      "type": "featured-product",
+      "blocks": {
+        "text_WWYNFj": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_mWgHHQ": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_DNbMLa": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price_zNFGJN": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_JtD8nB": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_whpthE": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_9fkNBC": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_bphRqJ": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "custom_liquid_KhXtnV": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "TOR MATHA"
+          }
+        },
+        "rating_whxWmF": {
+          "type": "rating",
+          "settings": {}
+        },
+        "text_Hp6cgJ": {
+          "type": "text",
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
+        },
+        "lookfy_gallery_lookfy_gallery_zi9hAH": {
+          "type": "shopify://apps/lookfy-gallery/blocks/lookfy-gallery/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
+          "settings": {
+            "gallery_id": 14924,
+            "dynamic_source": "",
+            "title": "",
+            "subtitle": "",
+            "heading_size": "1",
+            "heading_align": "left",
+            "custom_class": "",
+            "background_color": "",
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "padding_left_right": 0
+          }
+        }
+      },
+      "block_order": [
+        "text_WWYNFj",
+        "title_mWgHHQ",
+        "text_DNbMLa",
+        "price_zNFGJN",
+        "variant_picker_JtD8nB",
+        "quantity_selector_whpthE",
+        "buy_buttons_9fkNBC",
+        "share_bphRqJ",
+        "custom_liquid_KhXtnV",
+        "rating_whxWmF",
+        "text_Hp6cgJ",
+        "lookfy_gallery_lookfy_gallery_zi9hAH"
+      ],
+      "settings": {
+        "product": "",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -355,6 +520,8 @@
     "16639964221eaf5659",
     "0002c2cc-0592-4b24-91a7-3be868297576",
     "sell_multiple_liquid_rEDcbr",
-    "1731248583dccc5399"
+    "1731248583dccc5399",
+    "rich_text_w7rhGU",
+    "featured_product_Vt3UEP"
   ]
 }
