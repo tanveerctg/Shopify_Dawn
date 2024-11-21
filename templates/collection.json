@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
@@ -25,10 +34,97 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "featured_product_atAFmE": {
+      "type": "featured-product",
+      "blocks": {
+        "text_pmMYye": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_M6cePU": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_t3jaRy": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price_PN9Nhj": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_n9jBGL": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_8khm8P": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_Hfm6R7": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_cNfQnE": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "lookfy_gallery_lookfy_gallery_Qncd9R": {
+          "type": "shopify://apps/lookfy-gallery/blocks/lookfy-gallery/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
+          "settings": {
+            "dynamic_source": "",
+            "title": "",
+            "subtitle": "",
+            "heading_size": "1",
+            "heading_align": "left",
+            "custom_class": "",
+            "background_color": "",
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "padding_left_right": 0
+          }
+        }
+      },
+      "block_order": [
+        "text_pmMYye",
+        "title_M6cePU",
+        "text_t3jaRy",
+        "price_PN9Nhj",
+        "variant_picker_n9jBGL",
+        "quantity_selector_8khm8P",
+        "buy_buttons_Hfm6R7",
+        "share_cNfQnE",
+        "lookfy_gallery_lookfy_gallery_Qncd9R"
+      ],
+      "settings": {
+        "product": "",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "featured_product_atAFmE"
   ]
 }
