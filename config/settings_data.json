@@ -265,8 +265,8 @@
         "disabled": false,
         "settings": {}
       },
-      "4804857342997888293": {
-        "type": "shopify://apps/remix-testing-app/blocks/star_rating/56d41219-9dc9-4568-b19e-fc6429df2b84",
+      "544823942512659425": {
+        "type": "shopify://apps/popup-notification/blocks/star_rating/6f38251e-de58-4a92-9bd1-76d4b42470c9",
         "disabled": false,
         "settings": {
           "product": "",
