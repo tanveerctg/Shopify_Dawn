@@ -756,9 +756,10 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
     console.log("CURRENT VARIANT",this.currentVariant)
-    // console.log("document.allVariants",document.allVariants)
+    console.log("document.allVariants",document.allVariants)
     // console.log("this.getVariantData()",this.getVariantData())
 
+    /*
     const allVariants=JSON.parse(document.allVariants)
   
     const productDetails = document.querySelectorAll(".details__product");
@@ -785,6 +786,7 @@ class VariantSelects extends HTMLElement {
     variantInventory.textContent=allVariants[this.currentVariant.id].inventory_quantity
     console.log("allVariants",allVariants)
     console.log("currentVariant data",currentVariantType,allVariants[this.currentVariant.id])
+    */
   
 
     if (!this.currentVariant) {
