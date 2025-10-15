@@ -923,7 +923,7 @@ Shipping Bar
   <script type="application/json" id="variantsInfo">
     {     
       {%- for variant in product.variants -%}      
-            "{{ variant.id }}":{"description":"{{ variant.metafields.custom.description  }}","inventory_quantity":{{ variant.inventory_quantity }}{% if forloop.last == true %}{% else %},{% endif %}}     
+            "{{ variant.id }}":{ "description":"{{ variant.metafields.custom.description  }}","inventory_quantity":"{{ variant.inventory_quantity }}"{% if forloop.last == true %}{% else %},{% endif %}}     
       {%- endfor -%}
     }
 
